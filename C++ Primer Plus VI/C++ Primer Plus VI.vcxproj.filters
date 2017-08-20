@@ -1,0 +1,150 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Pliki źródłowe">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Pliki nagłówkowe">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Pliki zasobów">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Chapter 8 Assignments">
+      <UniqueIdentifier>{6b9a3ebe-83b8-412f-95d5-8aa5d992144c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Chapter 7 Assignments">
+      <UniqueIdentifier>{6dbfe083-c207-4d1a-8b55-7d16ce3d2bb5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Chapter 9 Assignments">
+      <UniqueIdentifier>{bad2c03f-abe4-46a1-906a-8233cba2d327}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stdafx.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="simplemenu.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="chapters.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_7\Chapter_7_Functions.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_8\Chapter_8_Functions.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_9\Chapter_9_Functions.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="C++ Primer Plus VI.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="cls.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_2\Chapter_2.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_3\Chapter_3.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_4\Chapter_4.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_5\Chapter_5.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_6\Chapter_6.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_7\Chapter_7.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_8\Chapter_8.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_9\Chapter_9.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_7\Chapter_7_Assignment10.cpp">
+      <Filter>Pliki źródłowe\Chapter 7 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_7\Chapter_7_Assignment9.cpp">
+      <Filter>Pliki źródłowe\Chapter 7 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_7\Chapter_7_Assignment8.cpp">
+      <Filter>Pliki źródłowe\Chapter 7 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_7\Chapter_7_Assignment7.cpp">
+      <Filter>Pliki źródłowe\Chapter 7 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_7\Chapter_7_Assignment6.cpp">
+      <Filter>Pliki źródłowe\Chapter 7 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_7\Chapter_7_Assignment5.cpp">
+      <Filter>Pliki źródłowe\Chapter 7 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_7\Chapter_7_Assignment4.cpp">
+      <Filter>Pliki źródłowe\Chapter 7 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_7\Chapter_7_Assignment3.cpp">
+      <Filter>Pliki źródłowe\Chapter 7 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_7\Chapter_7_Assignment2.cpp">
+      <Filter>Pliki źródłowe\Chapter 7 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_8\Chapter_8_Assignment7.cpp">
+      <Filter>Pliki źródłowe\Chapter 8 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_8\Chapter_8_Assignment6.cpp">
+      <Filter>Pliki źródłowe\Chapter 8 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_8\Chapter_8_Assignment5.cpp">
+      <Filter>Pliki źródłowe\Chapter 8 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_8\Chapter_8_Assignment4.cpp">
+      <Filter>Pliki źródłowe\Chapter 8 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_8\Chapter_8_Assignment3.cpp">
+      <Filter>Pliki źródłowe\Chapter 8 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_8\Chapter_8_Assignment2.cpp">
+      <Filter>Pliki źródłowe\Chapter 8 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_8\Chapter_8_Assignment1.cpp">
+      <Filter>Pliki źródłowe\Chapter 8 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_9\Chapter_9_Assignment4.cpp">
+      <Filter>Pliki źródłowe\Chapter 9 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_9\Chapter_9_Assignment3.cpp">
+      <Filter>Pliki źródłowe\Chapter 9 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_9\Chapter_9_Assignment2.cpp">
+      <Filter>Pliki źródłowe\Chapter 9 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_9\Chapter_9_Assignment1.cpp">
+      <Filter>Pliki źródłowe\Chapter 9 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_7\Chapter_7_Assignment1.cpp">
+      <Filter>Pliki źródłowe\Chapter 7 Assignments</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
