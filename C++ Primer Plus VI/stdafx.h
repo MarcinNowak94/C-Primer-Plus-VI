@@ -14,6 +14,7 @@
 #include <array>
 #include <fstream>
 #include <random>
+#include <limits>
 
 //simplemenu
 #include <windows.h>

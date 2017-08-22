@@ -1,11 +1,12 @@
 #include "../stdafx.h"
 #include "Chapter_9_Functions.h"
+#include "golf.h"
 
 /*
 Dany jest plik nag³ówkowy:
 golf.h -- do pe9-1.cpp
 
-coznst int Len=40;
+const int Len=40;
 struct golf
 {
  char fullname[Len];
@@ -15,7 +16,7 @@ struct golf
 //wersja nieinteraktywna
 //funkcja ustawia w strukturze golf zadane nazwisko i handicap
 //na podstawie argumentów wywo³ania
-voit setgolf(golf & g, const char * name, int hc);
+void setgolf(golf & g, const char * name, int hc);
 
 //wersja interaktywna
 // Funkcja pobiera nazwisko i wartoœæ handicapu od u¿ytkownika
@@ -55,8 +56,31 @@ main() powinna stosowaæ jedynie funkcje prototypowane w pliku nag³ówkowym.
 
 int Chapter_9_Assignment1()
 {
-	//TODO
-	std::cout << "\aNothing to see here (YET), move along.\n" << std::endl;
+	std::cout << "\aFunction under construcion." << std::endl;
+	const int arsize = 5;
+	golf golfarray[arsize];
+	char input[Len];
+	int handicap=0;
+	for (int i = 0; i < arsize; i++)
+	{
+		if (0==i%2)
+		{
+			setgolf(golfarray[i]);
+			showgolf(golfarray[i]);
+			continue;
+		};
+		std::cin.clear(); std::cin.ignore(1000, '\n');
+		std::cout << "\nInput golf players:"
+			<<"\nname: \t\t";
+		std::cin.getline(input, Len, '\n');
+		std::cin.clear(); std::cin.ignore(1000, '\n');
+		std::cout << "handicap: \t";
+		std::cin >> handicap;
+		setgolf(golfarray[i], input, handicap);
+		showgolf(golfarray[i]);
+	};
+	std::cout << "That were all of " << arsize << " players.\n"
+		<< "Press any key to get back to menu...\n";
 	_getch();
 	return 0;
 }

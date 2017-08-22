@@ -149,5 +149,8 @@
     <ClCompile Include="Chapter_7\Chapter_7_Assignment1.cpp">
       <Filter>Pliki źródłowe\Chapter 7 Assignments</Filter>
     </ClCompile>
+    <ClCompile Include="Chapter_9\golf.cpp">
+      <Filter>Pliki źródłowe\Chapter 9 Assignments</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

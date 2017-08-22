@@ -6,7 +6,7 @@
 #include "../chapters.h"
 #include "../simplemenu.h"
 
-/*
+//problem to solve for later
 int Chapter_7_Assignment1();
 int Chapter_7_Assignment2();
 int Chapter_7_Assignment3();
@@ -17,7 +17,7 @@ int Chapter_7_Assignment7();
 int Chapter_7_Assignment8();
 int Chapter_7_Assignment9();
 int Chapter_7_Assignment10();
-*/
+
 int Chapter_7()
 {
 	std::string options[]
