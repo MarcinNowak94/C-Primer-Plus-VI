@@ -53,10 +53,12 @@ main() powinna stosowaæ jedynie funkcje prototypowane w pliku nag³ówkowym.
 */
 
 
+//TODO: Bypass ignore problem (user has to input enter twice)
+//TODO: Extra task - error handling
 
 int Chapter_9_Assignment1()
 {
-	std::cout << "\aFunction under construcion." << std::endl;
+	std::cout << "\aFunction under construcion. Not finished yet." << std::endl;
 	const int arsize = 5;
 	golf golfarray[arsize];
 	char input[Len];

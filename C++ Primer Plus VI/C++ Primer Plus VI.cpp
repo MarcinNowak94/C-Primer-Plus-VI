@@ -9,12 +9,24 @@ int main()
 {
 	std::string options[]
 	{
-		"Chapter 1","Chapter 2","Chapter 3",
-		"Chapter 4","Chapter 5","Chapter 6",
-		"Chapter 7","Chapter 8","Chapter 9",
-		"Chapter 10","Chapter 11","Chapter 12",
-		"Chapter 13","Chapter 14","Chapter 15",
-		"Chapter 16","Chapter 17","Chapter 18",
+		"Chapter 1:\tGetting Started with C++ ",
+		"Chapter 2:\tSetting Out to C++",
+		"Chapter 3:\tDealing with Data",
+		"Chapter 4:\tCompound Types",
+		"Chapter 5:\tLoops and Relational Expressions",
+		"Chapter 6:\tBranching Statements and Logical Operators",
+		"Chapter 7:\tFunctions: C++’s Programming Modules",
+		"Chapter 8:\tAdventures in Functions",
+		"Chapter 9:\tMemory Models and Namespaces",
+		"Chapter 10:\tObjects and Classes",
+		"Chapter 11:\tWorking with Classes",
+		"Chapter 12:\tClasses and Dynamic Memory Allocation",
+		"Chapter 13:\tClass Inheritance",
+		"Chapter 14:\tReusing Code in C++",
+		"Chapter 15:\tFriends, Exceptions, and More",
+		"Chapter 16:\tThe string Class and the Standard Template Library",
+		"Chapter 17:\tInput, Output, and Files",
+		"Chapter 18:\tThe New C++11 Standard",
 		"EXIT"
 	};
 	const int amountofoptions = 19;
