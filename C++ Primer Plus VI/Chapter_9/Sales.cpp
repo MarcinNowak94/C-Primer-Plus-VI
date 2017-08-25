@@ -6,30 +6,30 @@
 //do sk³adowej sales struktury s i oblicza oraz zachowuje w odpowiednich
 //sk³adowych struktury sales wartoœci, œredni¹, minimaln¹ i maksymaln¹;
 //zeruje pozosta³e elementy tablicy sales (jeœli s¹);
+
+//ORIGINAL:
+// copies the lesser of 4 or n items from the array ar 
+// to the sales member of s and computes and stores the 
+// average, maximum, and minimum values of the entered items; 
+// remaining elements of sales, if any, set to 0
+
 void SALES::setSales(Sales &s, const double ar[], int n)
 {
 	double min = DBL_MAX;
 	double max = DBL_MIN;
+	int minindex = 0;
 	double average = 0;
 	for (auto i = 0; i < n; i++) 
 	{
-		while (ar[i] < min)	min = ar[i];
+		while (ar[i] < min) { min = ar[i]; minindex = i; };
 		while (ar[i] > max) max = ar[i];
 		average += ar[i];
 	};
-	//if it IS NOT a translation error THIS 
-	s.sales[0] = min;
 	for (auto i = 1; i <n; i++)
 	{
-		s.sales[i] = 0;
+		if (i == minindex) { s.sales[i] = min; }
+		else { s.sales[i] = 0; };
 	};
-	//if it IS translation error THIS
-	/*
-	for (auto i = 0; i <n; i++)
-	{
-		s.sales[i] = ar[i];
-	};
-	*/
 	s.min = min;
 	s.max = max;
 	s.average = average / n;
