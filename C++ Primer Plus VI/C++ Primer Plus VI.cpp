@@ -37,7 +37,7 @@ int main()
 		switch (input)
 		{
 		case 0: {std::cout << "\n\aChapter 1 had no assignments.\n" << "Press any key to continue ...\n"; _getch(); }; break;
-		case 1: {std::cout << "\n\aNo done assignment for Chapter 2. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); }; break;
+		case 1: input=Chapter_2(); break;
 		case 2: input=Chapter_3(); break;
 		case 3: input=Chapter_4(); break;
 		case 4: input=Chapter_5(); break;
