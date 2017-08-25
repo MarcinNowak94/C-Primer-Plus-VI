@@ -10,8 +10,8 @@ void Imperial_BMI();
 void Longitude();
 void Time();
 void Population();
-void FuelLeft();	//TODO
 void FuelUsage();
+void FuelConsumption();
 
 void Height()
 {
@@ -103,29 +103,69 @@ void Population()
 	return;
 };
 
-//TODO
-void FuelLeft()
+void FuelUsage()
 {
 	/*
-	6.Napisz program który bêdzie pyta³, ile mil przejechanoi ile galonów benzyny zu¿yto oraz il;e jeszcze zosta³o.
-	Mo¿esz te¿ napisaæ program, który prosi o podanie odleg³oœci w kilometrach i iloœci benzyny w litrach,
-	aby podaæ wynik zgodnie z normami europejskimi, w litrach na 100 kilometrów
+	Original:
+	Write a program that asks how many miles you have driven and how many gallons of gasoline you have used
+	and then reports the miles per gallon your car has gotten. Or,if you prefer,the program can request
+	distance in kilometers and petrol in liters and then report the result European style,in liters per 100 kilometers.
 	*/
-	std::cout << "\aNothing to see here (YET), move along.\n"<< std::endl;
+	std::cout << "\n[m]for metric, [i] for imperial"
+		<< "\nFuel usage calculator - pick system: ";
+	char choice = ' ';
+	do
+	{
+		std::cin >> choice;
+	} while (choice!='m' && choice!='M' && choice!='i' && choice!='I');
+	switch (choice)
+	{
+		case 'i': case 'I':
+		{
+			std::cout << "\nHow many miles have you driven? :";
+			float miles = 0;
+			std::cin >> miles;
+			std::cout << "\nHow many gallons of gasoline was used? :";
+			float gallons = 0;
+			std::cin >> gallons;
+			std::cout << "\nYour car fuel usage is " << miles/gallons << " mi/gal.\n";
+			std::cout << "\nPress any key to exit..." << std::endl;
+		}; break;
+		case 'm': case 'M':
+		{
+			std::cout << "\nHow many kilometers have you driven? :";
+			float kilometers = 0;
+			std::cin >> kilometers;
+			std::cout << "\nHow many liters of gasoline was used? :";
+			float liters = 0;
+			std::cin >> liters;
+			std::cout << "\nYour car fuel usage is " << liters/ kilometers << " l/km.\n";
+			std::cout << "\nPress any key to exit..." << std::endl;
+		}; break;
+		default: {std::cout << "\n\aSomething had to go wrong.\nPress any key to continue..."; _getch(); return; }; break;
+	};
 	_getch();
 	return;
 };
 
-//TODO
-void FuelUsage()
+void FuelConsumption()
 {
-	std::cout << "\n\aFunction under construction, you enter at your own risk!\n" << std::endl;
-	float usage;
+	/*
+	Original:
+	Write a program that asks you to enter an automobile gasoline consumption figure in the European style 
+	(liters per 100 kilometers) and converts to the U.S.style of miles per gallon. Note that in addition to using
+	different units of measurement,the U.S. approach (distance / fuel) is the inverse of the European approach (fuel / distance).
+	Note that 100 kilometers is 62.14 miles,and 1 gallon is 3.875 liters. 
+	Thus,19 mpg is about 12.4 l/100 km,and 27 mpg is about 8.7 l/100 km
+	*/
+	float milesper100km = 62.14;
+	float literspergallon = 3.875;
 	const double onehundredkilometresToMiles = 62.14, gallonToLitre = 3.8751;
-	std::cout << "\nInput your fuel usage in liters per 100km:";
+	std::cout << "\nInput your fuel usage in liters per 100km: _____ l/km\b\b\b\b\b\b\b\b\b\b";
+	float usage=0;
 	std::cin >> usage;
-		//convert it to american miles per galon, 100km=62,14mile 1gallon=3,875l
-		//19mil na galon oznacza oko³o 12,4 l/100km, a 19mil na litrze to oko³o 12,4 l/100km, z kolei 27mil na godzinê to oko³o 0,7l/100km
+	std::cout << "\nThis is equivalent to " << milesper100km/(usage/literspergallon)<< " miles per gallon in imperial units."
+		<< "\nPress any key to continue..." << std::endl;
 	_getch();
 };
 
@@ -138,8 +178,8 @@ int Chapter_3()
 		"Assignment 3:\tLongitude in degrees",
 		"Assignment 4:\tSeconds to time",
 		"Assignment 5:\tCountry percentage of world population",
-		"Assignment 6:\tkm/liter on given gallons of fuel",
-		"Assignment 7:\tFuel usage",
+		"Assignment 6:\tFuel usage calculator",
+		"Assignment 7:\tFuel consumption",
 		"Back to main menu" 
 	};
 	const int amountofoptions = 8;
@@ -154,8 +194,8 @@ int Chapter_3()
 		case 2: Longitude(); break;
 		case 3: Time(); break;
 		case 4: Population(); break;
-		case 5: FuelLeft(); break;
-		case 6: FuelUsage(); break;		//TODO
+		case 5: FuelUsage(); break;
+		case 6: FuelConsumption(); break;
 		case 7: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		};
