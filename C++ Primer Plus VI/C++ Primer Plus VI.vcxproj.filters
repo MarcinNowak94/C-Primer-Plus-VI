@@ -51,6 +51,9 @@
     <ClInclude Include="Chapter_9\golf.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter_9\Sales.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -150,6 +153,9 @@
       <Filter>Pliki źródłowe\Chapter 7 Assignments</Filter>
     </ClCompile>
     <ClCompile Include="Chapter_9\golf.cpp">
+      <Filter>Pliki źródłowe\Chapter 9 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_9\Sales.cpp">
       <Filter>Pliki źródłowe\Chapter 9 Assignments</Filter>
     </ClCompile>
   </ItemGroup>
