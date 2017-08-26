@@ -67,8 +67,8 @@ int Chapter_9();
 
 #endif // !CHAPTER_9
 
-//TODO
-/*
+
+
 #ifndef CHAPTER_10_H
 #define CHAPTER_10_H
 
@@ -76,6 +76,8 @@ int Chapter_10();
 
 #endif // !CHAPTER_10
 
+//TODO:Finish Chapters
+/*
 #ifndef CHAPTER_11_H
 #define CHAPTER_11_H
 
