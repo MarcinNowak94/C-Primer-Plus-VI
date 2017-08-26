@@ -139,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapters.h" />
+    <ClInclude Include="Chapter_10\Chapter_10_Functions.h" />
     <ClInclude Include="Chapter_7\Chapter_7_Functions.h" />
     <ClInclude Include="Chapter_8\Chapter_8_Functions.h" />
     <ClInclude Include="Chapter_9\Chapter_9_Functions.h" />
@@ -150,6 +151,33 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C++ Primer Plus VI.cpp" />
+    <ClCompile Include="Chapter_10\Chapter_10.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment1.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment2.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment3.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment4.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment5.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment6.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment7.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment8.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
     <ClCompile Include="Chapter_2\Chapter_2.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>

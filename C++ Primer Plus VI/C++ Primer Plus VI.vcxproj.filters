@@ -22,6 +22,9 @@
     <Filter Include="Pliki źródłowe\Chapter 9 Assignments">
       <UniqueIdentifier>{bad2c03f-abe4-46a1-906a-8233cba2d327}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki źródłowe\Chapter 10 Assignments">
+      <UniqueIdentifier>{14a7fddf-c318-45cd-acc1-2d7811ac20a7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -52,6 +55,9 @@
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="Chapter_9\Sales.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_10\Chapter_10_Functions.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>
@@ -157,6 +163,33 @@
     </ClCompile>
     <ClCompile Include="Chapter_9\Sales.cpp">
       <Filter>Pliki źródłowe\Chapter 9 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment1.cpp">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment8.cpp">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment7.cpp">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment6.cpp">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment5.cpp">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment4.cpp">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment3.cpp">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Chapter_10_Assignment2.cpp">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
