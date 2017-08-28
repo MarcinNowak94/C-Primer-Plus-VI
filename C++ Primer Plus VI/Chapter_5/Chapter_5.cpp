@@ -160,12 +160,11 @@ int Car_catalog()
 		std::getline(std::cin, (*car_pointer).Name);
 		std::cout << "Input year of production: \t";
 		std::cin >> (*car_pointer).yearOfProduction;
-		//std::cout << "(at: " << car_pointer << ")" << "\n";
 	};
 	std::cout << "All catalogued cars: \n";
 	for (unsigned int i = 0; i < namount_of_cars; i++)
 	{
-		std::cout /*<< "(" << vpointer_adress.at(i) << ")"*/ << i << ":\t" << (vpointer_adress.at(i)->Name) << ",\t" << (vpointer_adress.at(i)->yearOfProduction) << "\n"; 
+		std::cout << i << ":\t" << (vpointer_adress.at(i)->Name) << ",\t" << (vpointer_adress.at(i)->yearOfProduction) << "\n"; 
 	}
 	_getch();
 	return 0;
@@ -203,7 +202,6 @@ int Word_couter()
 	return 0;
 };
 
-//TODO
 int Word_Counter_String()
 {
 	const std::string csending_word = "ready";
@@ -280,7 +278,7 @@ int Chapter_5()
 		case 5: Book_3years(); break;
 		case 6: Car_catalog(); break;
 		case 7: Word_couter(); break;
-		case 8: Word_Counter_String(); break;		//TODO?
+		case 8: Word_Counter_String(); break;
 		case 9: Stars(); break;
 		case 10: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;

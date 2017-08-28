@@ -9,12 +9,12 @@
 int low_to_UP();
 int Contributions();
 int Menu();
-int Good_Will_Programmers();
+int Good_Will_Programmers(); //TODO: Code
 int Naturland();
 int Sponsors();
 int Word_calculator();
 int File_character_counter();
-int File_sponsors();
+int File_sponsors(); //TODO: Fix
 
 int low_to_UP()
 {
@@ -69,6 +69,52 @@ int Menu()
 //TODO
 int Good_Will_Programmers()
 {
+	/*
+	When you join the Benevolent Order of Programmers,you can be known at BOP
+	meetings by your real name,your job title,or your secret BOP name.Write a program
+	that can list members by real name,by job title,by secret name,or by a member’s
+	preference.Base the program on the following structure: 
+	
+	// Benevolent Order of Programmers name structure 
+	struct bop 
+	{
+	char fullname[strsize]; // real name 
+	char title[strsize];    // job title
+	char bopname[strsize];  // secret BOP
+	name int preference;         // 0 = fullname, 1 = title, 2 = bopname 
+	};
+
+	In the program,create a small array of such structures and initialize it to suitable
+	values.Have the program run a loop that lets the user select from different alternatives:
+	a. display by name     b. display by title 
+	c. display by bopname  d. display by preference 
+	q. quit
+	
+	Note that “display by preference”does not mean display the preference member;
+	it means display the member corresponding to the preference number.For instance,if 
+	preference is 1,choice d would display the programmer’s job title.A sample run
+	may look something like the following: 
+	
+	Benevolent Order of Programmers Report 
+	a. display by name     b. display by title 
+	c. display by bopname  d. display by preference 
+	q. quit 
+	Enter your choice: a 
+	Wimp Macho
+	Raki Rhodes 
+	Celia Laiter 
+	Hoppy Hipman 
+	Pat Hand 
+	Next choice: d 
+	Wimp Macho 
+	Junior Programmer
+	MIPS
+	Analyst Trainee
+	LOOPY
+	Next choice: q
+	Bye!
+	*/
+
 	std::cout << "\nNothing to see here (YET). Please move along ...\n" << "Press any key to continue ..." << std::endl;
 	_getch();
 	return 0;
@@ -142,38 +188,41 @@ int Sponsors()
 	return 0;
 };
 
-//TODO
 int Word_calculator()
 {
-	char cvovels[] = { 'a','e','i','o','u'};
-	char cnumbers[] = { '0','1','2','3','4','5','6','7','8','9' };
+	char vovelstab[] = { 'a','e','i','o','u'};
+	char numbers[] = { '0','1','2','3','4','5','6','7','8','9' };
 	const int arsize = 1000;
-	std::cout << "Input text, ' q ' ends sequence:";
-	char character[arsize]{"o"};
-	int i=2, nvovels=0, nconsonants=0, nother=0;
-	while (character[i]= _getch())
+	std::cout << "\nInput text, ' q ' ends sequence:\n";
+	char character[arsize]{" "};
+	int i=1, vovels=0, consonants=0, other=0;
+	character[i] = _getch();
+	while ('q'!=character[i])
 	{
+		std::cout << character[i];
 		if (isalpha(character[i]) && character[i-1]== ' ')
 		{
-			if ((character[i] > 'a' && character[i] < 'z') || (character[i] > 'A' && character[i] < 'Z')) nconsonants++; else
+			if ((character[i] > 'a' && character[i] < 'z') || (character[i] > 'A' && character[i] < 'Z')) 
 			{
-				for (int j = 0; j < 4; j++)
+				consonants++;
+				for (int j = 0; j < 5; j++)
 				{
-					if (character[i] == cvovels[j]) nvovels++;
+					if (character[i] == vovelstab[j]) { vovels++; consonants--; break; };
 				};
-				for (int j = 0; j < 9; j++)
+				for (int j = 0; j < 10; j++)
 				{
-					if (character[i] == cnumbers[j]) nother++;
+					if (character[i] == numbers[j]) { other++; consonants--; break; };
 				};
 			};
 		}
+		else if (isalnum(character[i]) && character[i - 1] == ' ') other++;
 		i++;
-		if (character[i-1] == ' ' && character[i] == 'q') break;
-	}
-	std::cout << "In given sentence there are:\n"
-		<< nvovels << " words beginning with vovel,\n"
-		<< nconsonants << " words beginning with consonants,\n"
-		<< nother << " other words";
+		character[i] = _getch();
+	};
+	std::cout << "\nIn given sentence there are:\n"
+		<< vovels << " words beginning with vovel,\n"
+		<< consonants << " words beginning with consonants,\n"
+		<< other << " other words";
 	_getch();
 	return 0;
 };
@@ -195,7 +244,7 @@ int File_character_counter()
 	return 0;
 };
 
-//TODO
+//TODO: Fix
 int File_sponsors()
 {
 	/*std::ofstream fosponsorsfile;
@@ -270,7 +319,7 @@ int Chapter_6()
 		"Assignment 1:\tlowercase to UPPERCASE",
 		"Assignment 2:\tContributions",
 		"Assignment 3:\tMenu",
-		"Assignment 4:\tOrder of Good Will Programmers",	//TODO
+		"Assignment 4:\tOrder of Good Will Programmers",
 		"Assignment 5:\tNaturland",
 		"Assignment 6:\tDonations tracking",
 		"Assignment 7:\tCalculating words untill 'q'",
@@ -291,7 +340,7 @@ int Chapter_6()
 		case 3: Good_Will_Programmers(); break;		//TODO
 		case 4:	Naturland(); break;
 		case 5: Sponsors(); break;
-		case 6: Word_calculator(); break;			//TODO
+		case 6: Word_calculator(); break;
 		case 7: File_character_counter(); break;
 		case 8: File_sponsors(); break;				//TODO?
 		case 9: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;

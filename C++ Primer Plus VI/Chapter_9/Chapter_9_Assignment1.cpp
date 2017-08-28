@@ -2,6 +2,10 @@
 #include "Chapter_9_Functions.h"
 #include "golf.h"
 
+//TODO: Bypass ignore problem (user has to input enter twice)
+//TODO: Extra task - error handling
+
+
 /*
 Dany jest plik nag³ówkowy:
 golf.h -- do pe9-1.cpp
@@ -52,9 +56,6 @@ b¹dŸ wprowadzeniu w roli nazwiska gracza ci¹gu pustego. Do obs³ugi struktury gol
 main() powinna stosowaæ jedynie funkcje prototypowane w pliku nag³ówkowym.
 */
 
-
-//TODO: Bypass ignore problem (user has to input enter twice)
-//TODO: Extra task - error handling
 
 int Chapter_9_Assignment1()
 {
