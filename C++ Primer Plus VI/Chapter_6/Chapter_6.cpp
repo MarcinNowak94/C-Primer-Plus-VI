@@ -9,7 +9,7 @@
 int low_to_UP();
 int Contributions();
 int Menu();
-int Good_Will_Programmers(); //TODO: Code
+int Benevolent_Order_of_Programmers(); //TODO: Code
 int Naturland();
 int Sponsors();
 int Word_calculator();
@@ -67,7 +67,7 @@ int Menu()
 };
 
 //TODO
-int Good_Will_Programmers()
+int Benevolent_Order_of_Programmers()
 {
 	/*
 	When you join the Benevolent Order of Programmers,you can be known at BOP
@@ -80,8 +80,8 @@ int Good_Will_Programmers()
 	{
 	char fullname[strsize]; // real name 
 	char title[strsize];    // job title
-	char bopname[strsize];  // secret BOP
-	name int preference;         // 0 = fullname, 1 = title, 2 = bopname 
+	char bopname[strsize];  // secret BOP name
+	int preference;         // 0 = fullname, 1 = title, 2 = bopname 
 	};
 
 	In the program,create a small array of such structures and initialize it to suitable
@@ -114,8 +114,76 @@ int Good_Will_Programmers()
 	Next choice: q
 	Bye!
 	*/
+	const int strsize = 80;
+	// Benevolent Order of Programmers name structure 
+	struct bop
+	{
+		char fullname[strsize]; // real name 
+		char title[strsize];    // job title
+		char bopname[strsize];  // secret BOP name
+		int preference;         // 0 = fullname, 1 = title, 2 = bopname 
+	};
 
-	std::cout << "\nNothing to see here (YET). Please move along ...\n" << "Press any key to continue ..." << std::endl;
+	bop Programmers[]
+	{
+		{ "Wimp Macho", "Junior Programmer", "WM", 0 },
+		{ "Raki Rhodes", "Junior Programmer", "RR", 1 },
+		{ "Celia Laiter", "Senior Programmer", "MIPS", 2 },
+		{ "Hoppy Hipman", "Analyst Trainee", "Happy", 1 },
+		{ "Pat Hand", "UI designer", "LOOPY", 2 }
+	};
+
+	//std::cout << "\nNothing to see here (YET). Please move along ...\n" << "Press any key to continue ..." << std::endl;
+	
+	std::cout << "Benevolent Order of Programmers Report\n"
+		<< "a.display by name     b.display by title\n"
+		<< "c.display by bopname  d.display by preference\n"
+		<< "q.quit";
+	char input;
+	do
+	{
+		std::cout << "\nEnter your choice: ";
+		input=_getch();
+		std::wcout << input;
+		switch (input)
+		{
+		case 'a': 
+		{
+			for (size_t i = 0; i < (sizeof(Programmers) / sizeof(bop)); i++)
+			{
+				std::cout << "\n" << Programmers[i].fullname;
+			};
+		}; break;
+		case 'b':
+		{
+			for (size_t i = 0; i < (sizeof(Programmers) / sizeof(bop)); i++)
+			{
+				std::cout << "\n" << Programmers[i].title;
+			};
+		}; break;
+		case 'c':
+		{
+			for (size_t i = 0; i < (sizeof(Programmers) / sizeof(bop)); i++)
+			{
+				std::cout << "\n" << Programmers[i].bopname ;
+			};
+		}; break;
+		case 'd':
+		{
+			for (size_t i = 0; i < (sizeof(Programmers) / sizeof(bop)); i++)
+			{
+				switch (Programmers[i].preference)
+				{
+				case 0: {std::cout << "\n" << Programmers[i].fullname; }; break;
+				case 1: {std::cout << "\n" << Programmers[i].title; }; break;
+				case 2: {std::cout << "\n" << Programmers[i].bopname; }; break;
+				}
+			};
+		}; break;
+		default: {std::cout << "\n\aNo option tied to character '" << input << "'. Try again"; }; break;
+		}
+	} while ('q'!=input && 'Q'!=input);
+	std::cout << "\nBye!" << std::endl;	
 	_getch();
 	return 0;
 };
@@ -319,7 +387,7 @@ int Chapter_6()
 		"Assignment 1:\tlowercase to UPPERCASE",
 		"Assignment 2:\tContributions",
 		"Assignment 3:\tMenu",
-		"Assignment 4:\tOrder of Good Will Programmers",
+		"Assignment 4:\tBenevolent Order of Programmers",
 		"Assignment 5:\tNaturland",
 		"Assignment 6:\tDonations tracking",
 		"Assignment 7:\tCalculating words untill 'q'",
@@ -337,7 +405,7 @@ int Chapter_6()
 		case 0: low_to_UP(); break;
 		case 1: Contributions(); break;
 		case 2: Menu(); break;
-		case 3: Good_Will_Programmers(); break;		//TODO
+		case 3: Benevolent_Order_of_Programmers(); break;		//TODO
 		case 4:	Naturland(); break;
 		case 5: Sponsors(); break;
 		case 6: Word_calculator(); break;
