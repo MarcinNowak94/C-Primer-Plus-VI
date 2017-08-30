@@ -28,6 +28,9 @@
     <Filter Include="Pliki źródłowe\Chapter 11 Assignments">
       <UniqueIdentifier>{e406c463-d67b-430e-b39d-cccd8364665b}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki źródłowe\Chapter 12 Assignments">
+      <UniqueIdentifier>{11874db3-99f5-4df1-97ee-07bc26d35326}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -64,6 +67,9 @@
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="Chapter_11\Chapter_11_Functions.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_12\Chapter_12_Functions.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>
@@ -220,6 +226,27 @@
     </ClCompile>
     <ClCompile Include="Chapter_11\Chapter_11.cpp">
       <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment1.cpp">
+      <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment2.cpp">
+      <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment3.cpp">
+      <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment4.cpp">
+      <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment5.cpp">
+      <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment6.cpp">
+      <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
