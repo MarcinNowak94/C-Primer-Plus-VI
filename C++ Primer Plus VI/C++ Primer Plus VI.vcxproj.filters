@@ -25,6 +25,9 @@
     <Filter Include="Pliki źródłowe\Chapter 10 Assignments">
       <UniqueIdentifier>{14a7fddf-c318-45cd-acc1-2d7811ac20a7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki źródłowe\Chapter 11 Assignments">
+      <UniqueIdentifier>{e406c463-d67b-430e-b39d-cccd8364665b}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -58,6 +61,9 @@
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="Chapter_10\Chapter_10_Functions.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_11\Chapter_11_Functions.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>
@@ -190,6 +196,30 @@
     </ClCompile>
     <ClCompile Include="Chapter_10\Chapter_10_Assignment2.cpp">
       <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment1.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment2.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment3.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment4.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment5.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment6.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment7.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11.cpp">
+      <Filter>Pliki źródłowe</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
