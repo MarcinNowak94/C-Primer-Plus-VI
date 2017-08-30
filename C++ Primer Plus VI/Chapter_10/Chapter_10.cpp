@@ -17,14 +17,14 @@ int Chapter_10()
 {
 	std::string options[]
 	{
-		"Assignment 1:\t",
-		"Assignment 2:\t",
-		"Assignment 3:\t",
-		"Assignment 4:\t",
-		"Assignment 5:\t",
-		"Assignment 6:\t",
-		"Assignment 7:\t",
-		"Assignment 8:\t",
+		"Assignment 1:\t'Bank Account' class",
+		"Assignment 2:\t'Person' methods",
+		"Assignment 3:\tTurning 'golf' structure into 'golf' class",
+		"Assignment 4:\tTurning 'Sales' structure into 'Sales' class",
+		"Assignment 5:\tCustomer stack",
+		"Assignment 6:\tMember functions of 'Move'",
+		"Assignment 7:\t'Plorg'",
+		"Assignment 8:\t'List' class",
 		"Back"
 	};
 	const int amountofoptions = 9;
