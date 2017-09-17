@@ -21,6 +21,4 @@
 #include <string>
 #include <vector>
 
-
-
 // TODO: W tym miejscu odwo³aj siê do dodatkowych nag³ówków wymaganych przez program
