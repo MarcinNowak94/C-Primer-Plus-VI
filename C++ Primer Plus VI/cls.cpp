@@ -1,4 +1,3 @@
-#include "../C++ Primer Plus VI/simplemenu.h"
 #include <windows.h>
 
 

@@ -1,11 +1,9 @@
-#include "stdafx.h"
 #pragma once
 #include <iostream>
 #include <windows.h>
 #include <conio.h>
 #include <vector>
 #include <string>
-
 
 #ifndef CLS_H
 #define CLS_H
@@ -40,7 +38,8 @@ void cls(HANDLE hConsole)
 	SetConsoleCursorPosition(hConsole, coordScreen);
 };
 
-#endif //!CLS_H
+#endif // !CLS_H
+
 
 #ifndef SIMPLEMENUDISPLAY_H
 #define SIMPLEMENUDISPLAY_H
@@ -125,7 +124,7 @@ int simplemenu(T & optionstodisplay)
 	int cursorpos = 0;
 	cursorpos = simplemenudisplay(menu, optionstodisplay, (sizeof(optionstodisplay) / sizeof(*optionstodisplay)), cursorpos);
 	return cursorpos;
-}
+};
 
 template<class T, class T2>
 int simplemenu(T & optionstodisplay, T2 & header)
@@ -140,5 +139,5 @@ int simplemenu(T & optionstodisplay, T2 & header)
 	int cursorpos = 0;
 	cursorpos = simplemenudisplay(menu, optionstodisplay, (sizeof(optionstodisplay) / sizeof(*optionstodisplay)), cursorpos, header);
 	return cursorpos;
-}
+};
 #endif // !SIMPLEMENU_H
