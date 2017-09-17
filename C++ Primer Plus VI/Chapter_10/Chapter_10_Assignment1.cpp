@@ -1,5 +1,6 @@
 #include "../stdafx.h"
 #include "Chapter_10_Functions.h"
+#include "../Chapter_10/Account.h"
 
 
 /*
@@ -24,6 +25,13 @@ int Chapter_10_Assignment1()
 {
 	std::cout << "\a\nNothing to see here (YET), move along.";
 	std::cout << "\nPress any key to contine..." << std::endl;
+	Account acc1{ "account1", "101010101010101010101010", 3000 };
+	acc1.Display();
+	acc1.Deposit(300);
+	acc1.Display();
+	acc1.Withdraw(1500);
+	acc1.Display();
+	acc1.~Account();
 	_getch();
 	return 0;
 };
