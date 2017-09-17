@@ -21,11 +21,10 @@ int Chapter_9()
 		"Assignment 4:\tSales",
 		"Back"
 	};
-	const int amountofoptions = 5;
 	int input;
 	do
 	{
-		input = simplemenu(options, amountofoptions);
+		input = simplemenu(options, "Chapter 9");
 		switch (input)
 		{
 		case 0: Chapter_9_Assignment1(); break;
@@ -35,7 +34,7 @@ int Chapter_9()
 		case 4: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		};
-	} while (input != amountofoptions - 1 && input != 27);
+	} while (input != (sizeof(options) / sizeof(options[0]))-1 && input != 27);
 	return input;	//when ESC pressed as input
 }
 

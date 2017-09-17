@@ -16,8 +16,6 @@ int Chapter_2();
 
 #endif // !CHAPTER_2
 
-
-
 #ifndef CHAPTER_3_H
 #define CHAPTER_3_H
 
@@ -67,16 +65,12 @@ int Chapter_9();
 
 #endif // !CHAPTER_9
 
-
-
 #ifndef CHAPTER_10_H
 #define CHAPTER_10_H
 
 int Chapter_10();
 
 #endif // !CHAPTER_10
-
-
 
 #ifndef CHAPTER_11_H
 #define CHAPTER_11_H
@@ -85,9 +79,6 @@ int Chapter_11();
 
 #endif // !CHAPTER_11
 
-
-//TODO:Finish Chapters
-/*
 #ifndef CHAPTER_12_H
 #define CHAPTER_12_H
 
@@ -95,6 +86,8 @@ int Chapter_12();
 
 #endif // !CHAPTER_12
 
+//TODO:Finish Chapters
+/*
 #ifndef CHAPTER_13_H
 #define CHAPTER_13_H
 

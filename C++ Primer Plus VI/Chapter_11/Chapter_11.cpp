@@ -23,14 +23,12 @@ int Chapter_11()
 		"Assignment 4:\tTime class example using friend functions",
 		"Assignment 5:\tChanging Stonewt class",
 		"Assignment 6:\tStonewt class. Rewriting relational operators",
-		"Assignment 7:\tComplex class dealing with complex numbers",
-		"Back"
+		"Assignment 7:\tComplex class dealing with complex numbers"
 	};
-	const int amountofoptions = 8;
 	int input;
 	do
 	{
-		input = simplemenu(options, amountofoptions);
+		input = simplemenu(options, "Chapter 11");
 		switch (input)
 		{
 		case 0: Chapter_11_Assignment1(); break;
@@ -43,7 +41,7 @@ int Chapter_11()
 		case 7: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		};
-	} while (input != amountofoptions - 1 && input != 27);
+	} while (input != (sizeof(options) / sizeof(options[0]))-1 && input != 27);
 	return input;	//when ESC pressed as input
 }
 

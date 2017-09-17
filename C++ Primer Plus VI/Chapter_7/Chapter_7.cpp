@@ -31,14 +31,13 @@ int Chapter_7()
 		"Assignment 7:\tProperty reevaluator",
 		"Assignment 8:\tListing 7.17 without array",
 		"Assignment 9:\tGroup of students",
-		"Assignment 10:\tFunction pointers",
-		"Back"
+		"Assignment 10:\tFunction pointers"
 	};
 	const int amountofoptions = 11;
 	int input;
 	do
 	{
-		input = simplemenu(options, amountofoptions);
+		input = simplemenu(options, "Chapter 7");
 		switch (input)
 		{
 		
@@ -56,7 +55,7 @@ int Chapter_7()
 		case 10: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		};
-	} while (input != amountofoptions - 1 && input != 27);
+	} while (input != (sizeof(options) / sizeof(options[0]))-1 && input != 27);
 	return input;	//when ESC pressed as input
 }
 

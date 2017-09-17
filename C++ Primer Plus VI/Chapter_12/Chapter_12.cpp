@@ -20,14 +20,12 @@ int Chapter_12()
 		"Assignment 3:\tDynamically allocated 'Stack' class",
 		"Assignment 4:\t'Stack' class redefined",
 		"Assignment 5:\t100 hours at ATM",
-		"Assignment 6:\t100 hours and 2 ATMs",
-		"Back"
+		"Assignment 6:\t100 hours and 2 ATMs"
 	};
-	const int amountofoptions = 7;
 	int input;
 	do
 	{
-		input = simplemenu(options, amountofoptions);
+		input = simplemenu(options, "Chapter 12");
 		switch (input)
 		{
 		case 0: Chapter_12_Assignment1(); break;
@@ -39,7 +37,7 @@ int Chapter_12()
 		case 6: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		};
-	} while (input != amountofoptions - 1 && input != 27);
+	} while (input != (sizeof(options) / sizeof(options[0]))-1 && input != 27);
 	return input;	//when ESC pressed as input
 }
 

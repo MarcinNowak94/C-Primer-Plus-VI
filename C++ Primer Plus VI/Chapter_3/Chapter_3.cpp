@@ -179,14 +179,12 @@ int Chapter_3()
 		"Assignment 4:\tSeconds to time",
 		"Assignment 5:\tCountry percentage of world population",
 		"Assignment 6:\tFuel usage calculator",
-		"Assignment 7:\tFuel consumption",
-		"Back to main menu" 
+		"Assignment 7:\tFuel consumption"
 	};
-	const int amountofoptions = 8;
 	int input;
 	do
 	{
-		input = simplemenu(options, amountofoptions);
+		input = simplemenu(options, "Chapter 3");
 		switch (input)
 		{
 		case 0: Height(); break;
@@ -199,7 +197,7 @@ int Chapter_3()
 		case 7: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		};
-	} while (input != amountofoptions-1 && input != 27);
+	} while (input != (sizeof(options) / sizeof(options[0]))-1 && input != 27);
     return input;	//when ESC pressed as input
 };
 

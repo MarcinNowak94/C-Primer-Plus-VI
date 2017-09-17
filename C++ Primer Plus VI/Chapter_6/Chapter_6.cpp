@@ -392,14 +392,12 @@ int Chapter_6()
 		"Assignment 6:\tDonations tracking",
 		"Assignment 7:\tCalculating words untill 'q'",
 		"Assignment 8:\tAmount of characters in textfile",
-		"Assignment 9:\tDonations tracking in file",
-		"Back"
+		"Assignment 9:\tDonations tracking in file"
 	};
-	const int amountofoptions = 10;
 	int input;
 	do
 	{
-		input = simplemenu(options, amountofoptions);
+		input = simplemenu(options, "Chapter 6");
 		switch (input)
 		{
 		case 0: low_to_UP(); break;
@@ -414,7 +412,7 @@ int Chapter_6()
 		case 9: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		};
-	} while (input != amountofoptions - 1 && input != 27);
+	} while (input != (sizeof(options) / sizeof(options[0]))-1 && input != 27);
 	return input;	//when ESC pressed as input
 }
 

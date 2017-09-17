@@ -72,15 +72,15 @@
     <ClInclude Include="Chapter_12\Chapter_12_Functions.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter_10\Account.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
     <ClCompile Include="C++ Primer Plus VI.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="cls.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
     <ClCompile Include="Chapter_2\Chapter_2.cpp">
@@ -247,6 +247,9 @@
     </ClCompile>
     <ClCompile Include="Chapter_12\Chapter_12_Assignment6.cpp">
       <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Account.cpp">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

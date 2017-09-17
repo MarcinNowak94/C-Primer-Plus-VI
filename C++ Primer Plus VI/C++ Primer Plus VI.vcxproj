@@ -139,6 +139,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="chapters.h" />
+    <ClInclude Include="Chapter_10\Account.h" />
     <ClInclude Include="Chapter_10\Chapter_10_Functions.h" />
     <ClInclude Include="Chapter_11\Chapter_11_Functions.h" />
     <ClInclude Include="Chapter_12\Chapter_12_Functions.h" />
@@ -153,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="C++ Primer Plus VI.cpp" />
+    <ClCompile Include="Chapter_10\Account.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
     <ClCompile Include="Chapter_10\Chapter_10.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -317,9 +321,6 @@
     </ClCompile>
     <ClCompile Include="Chapter_9\Sales.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
-    </ClCompile>
-    <ClCompile Include="cls.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>

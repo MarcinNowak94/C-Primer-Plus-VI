@@ -232,14 +232,12 @@ int Chapter_4()
 		"Assignment 7:\tWilliam's Pizza Metric",
 		"Assignment 8:\tDynamic William's Pizza Metric",
 		"Assignment 9:\tDynamic Snack array",
-		"Assignment 10:\tAverage hundred meter dash score",
-		"Back"
+		"Assignment 10:\tAverage hundred meter dash score"
 	};
-	const int amountofoptions = 11;
 	int input;
 	do
 	{
-		input = simplemenu(options, amountofoptions);
+		input = simplemenu(options, "Chapter 4");
 		switch (input)
 		{
 		case 0: Metric(); break;
@@ -255,7 +253,7 @@ int Chapter_4()
 		case 10: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		};
-	} while (input != amountofoptions-1 && input != 27);
+	} while (input != (sizeof(options) / sizeof(options[0]))-1 && input != 27);
 	return input;	//when ESC pressed as input
 }
 

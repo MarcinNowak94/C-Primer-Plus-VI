@@ -260,14 +260,12 @@ int Chapter_5()
 		"Assignment 7:\tCatalog of cars",
 		"Assignment 8:\tCounting input phrase words",
 		"Assignment 9:\tCounting input phrase words - string",
-		"Assignment 10:\tStar shenanigans",
-		"Back" 
+		"Assignment 10:\tStar shenanigans"
 	};
-	const int amountofoptions = 11;
 	int input;
 	do
 	{
-		input = simplemenu(options, amountofoptions);
+		input = simplemenu(options, "Chapter 5");
 		switch (input)
 		{
 		case 0: RealNum_Range_Sum(); break;
@@ -283,7 +281,7 @@ int Chapter_5()
 		case 10: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		};
-	} while (input != amountofoptions - 1 && input != 27);
+	} while (input != (sizeof(options) / sizeof(options[0])) - 1 && input != 27);
 	return input;	//when ESC pressed as input
 }
 

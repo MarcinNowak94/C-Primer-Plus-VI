@@ -24,14 +24,12 @@ int Chapter_8()
 		"Assignment 4:\tTampering with string structure",
 		"Assignment 5:\tTemplate arrays max values",
 		"Assignment 6:\tTemplate tab functions specialization",
-		"Assignment 7:\tListing 8.16 templating",
-		"Back"
+		"Assignment 7:\tListing 8.16 templating"
 	};
-	const int amountofoptions = 8;
 	int input;
 	do
 	{
-		input = simplemenu(options, amountofoptions);
+		input = simplemenu(options, "Chapter 8");
 		switch (input)
 		{
 		case 0: Chapter_8_Assignment1(); break;
@@ -44,7 +42,7 @@ int Chapter_8()
 		case 7: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		};
-	} while (input != amountofoptions - 1 && input != 27);
+	} while (input != (sizeof(options) / sizeof(options[0]))-1 && input != 27);
 	return input;	//used only in case of pressing ESC
 }
 

@@ -24,14 +24,12 @@ int Chapter_10()
 		"Assignment 5:\tCustomer stack",
 		"Assignment 6:\tMember functions of 'Move'",
 		"Assignment 7:\t'Plorg'",
-		"Assignment 8:\t'List' class",
-		"Back"
+		"Assignment 8:\t'List' class"
 	};
-	const int amountofoptions = 9;
 	int input;
 	do
 	{
-		input = simplemenu(options, amountofoptions);
+		input = simplemenu(options, "Chapter 10");
 		switch (input)
 		{
 		case 0: Chapter_10_Assignment1(); break;
@@ -45,7 +43,7 @@ int Chapter_10()
 		case 8: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		};
-	} while (input != amountofoptions - 1 && input != 27);
+	} while (input != (sizeof(options) / sizeof(options[0]))-1 && input != 27);
 	return input;	//when ESC pressed as input
 }
 

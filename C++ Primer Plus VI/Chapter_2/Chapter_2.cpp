@@ -26,14 +26,12 @@ int Chapter_2()
 		"Assignment 4:\tYears to months",
 		"Assignment 5:\tCelsius to Fahrenheit",
 		"Assignment 6:\tLight years to astronomical units",
-		"Assignment 7:\tShow time",
-		"Back to main menu"
+		"Assignment 7:\tShow time"
 	};
-	const int amountofoptions = 8;
 	int input;
 	do
 	{
-		input = simplemenu(options, amountofoptions);
+		input = simplemenu(options, "Chapter 2");
 		switch (input)
 		{
 		case 0: Chapter_assignment1(); break;
@@ -46,7 +44,7 @@ int Chapter_2()
 		case 7: {std::cout << "\a\nBack to main menu then!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		};
-	} while (input != amountofoptions - 1 && input != 27);
+	} while (input != (sizeof(options)/sizeof(options[0]))-1 && input != 27);
 	return input;	//when ESC pressed as input
 }
 
@@ -58,7 +56,7 @@ int Eeny()
 
 int Miny()
 {
-	std::cout << "miny, mope.\n";
+	std::cout << "miny, moe.\n";
 	return 0;
 };
 
