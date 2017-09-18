@@ -1,5 +1,6 @@
 #include "../stdafx.h"
 #include "Chapter_10_Functions.h"
+#include "Person.h"
 
 /*
 2. Here is a rather simple class definition:
@@ -32,8 +33,21 @@ one.FormalShow();
 
 int Chapter_10_Assignment2()
 {
-	std::cout << "\a\nNothing to see here (YET), move along.";
-	std::cout << "\nPress any key to contine..." << std::endl;
+	Person one;                       // use default constructor
+	Person two("Smythecraft");        // use #2 with one default argument
+	Person three("Dimwiddy", "Sam");  // use #2, no defaults
+	one.Show();
+	std::cout << std::endl;
+	one.FormalShow();
+	std::cout << std::endl;
+	two.Show();
+	std::cout << std::endl;
+	two.FormalShow();
+	std::cout << std::endl;
+	three.Show();
+	std::cout << std::endl;
+	three.FormalShow();
+	std::cout << "\nPress any key to exit ..." << std::endl;
 	_getch();
 	return 0;
 };

@@ -23,8 +23,6 @@ Just show the class declaration,not the method implementations.
 
 int Chapter_10_Assignment1()
 {
-	std::cout << "\a\nNothing to see here (YET), move along.";
-	std::cout << "\nPress any key to contine..." << std::endl;
 	Account acc1{ "account1", "101010101010101010101010", 3000 };
 	acc1.Display();
 	acc1.Deposit(300);
@@ -32,6 +30,7 @@ int Chapter_10_Assignment1()
 	acc1.Withdraw(1500);
 	acc1.Display();
 	acc1.~Account();
+	std::cout << "\nPress any key to exit ..." << std::endl;
 	_getch();
 	return 0;
 };
