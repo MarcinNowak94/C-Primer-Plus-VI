@@ -42,3 +42,24 @@ void handicap(golf & g, int hc);
 void showgolf(const golf & g);
 
 #endif // !SHOWGOLF_H
+
+//CHAPTER 10 ASSIGNMENT 3
+
+#ifndef GOLF_H
+#define GOLF_H
+
+class Golf
+{
+public:
+	Golf(char name[]="default player", int handicap=10 );
+	~Golf();
+	void Setgolf();
+	void Showgolf();
+
+private:
+	static const int m_Len = 40;
+	char m_fullname[m_Len];
+	int m_handicap;
+};
+
+#endif // !GOLF_H
