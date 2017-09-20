@@ -1,5 +1,6 @@
 #include "../stdafx.h"
 #include "Chapter_10_Functions.h"
+#include "../Chapter_9/Sales.h"
 
 /*
 4. Do Programming Exercise 4 from Chapter 9 but convert the Sales structure and
@@ -13,6 +14,13 @@ int Chapter_10_Assignment4()
 {
 	std::cout << "\a\nNothing to see here (YET), move along.";
 	std::cout << "\nPress any key to contine..." << std::endl;
+	double arr[] = { 4000, 57632, 7.89, 875.4 };
+	SALES::SALES year1;
+	SALES::SALES year2;
+	year1.SetSales();
+	year1.ShowSales();
+	year2.ShowSales();
+	std::cout << "\nPress any key to continue..." << std::endl;
 	_getch();
 	return 0;
 };

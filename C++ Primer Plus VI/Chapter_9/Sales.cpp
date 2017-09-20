@@ -59,7 +59,7 @@ void SALES::setSales(Sales & s)
 };
 
 //wyœwietla komplet informacji ze struktury s
-void SALES::showSales(const SALES::Sales & s)
+void SALES::showSales(const Sales &s)
 {
 	std::cout << "\n(" << &s << ")Sales summary:";
 	for (auto i = 0; i < QUARTERS; i++)
@@ -70,4 +70,54 @@ void SALES::showSales(const SALES::Sales & s)
 		<< "\nMaximum:\t" << s.max
 		<< "\nAverage:\t" << s.average << std::endl;
 	return;
+};
+
+
+//Chapter10_Assignment4 class definitions
+
+void SALES::SALES::SetSales()
+{
+	this->m_max = DBL_MIN;
+	this->m_min = DBL_MAX;
+	double average = 0;
+	std::cout << "(" << this << ")"	<< "\nInput amount of sales in each quarter:\n";
+	for (size_t i = 0; i < quarters; i++)
+	{
+		std::cout << "Quarter " << i+1 << ":";
+		std::cin >> this->m_sales[i];
+		while (this->m_sales[i] < this->m_min)           this->m_min = this->m_sales[i];
+		while (this->m_sales[i] > this->m_max)          this->m_max = this->m_sales[i];
+		average += this->m_sales[i];
+	};
+	this->m_average = average / QUARTERS;
+	return;
+};
+
+void SALES::SALES::ShowSales()
+{
+	std::cout << "\nObject " << this;
+	for (size_t i = 0; i< quarters; i++)
+	{
+		std::cout << "\nquarter" << i+1 << "\t" << this->m_sales[i];
+	};
+	std::cout << "\nmin:\t" << this->m_min
+		<< "\nmax:\t" << this->m_max
+		<< "\naverage:\t" << this->m_average;
+	return;
+};
+
+SALES::SALES::SALES(double sales[quarters], double min, double max, double average)
+{
+	for (size_t i = 0; i < quarters; i++)
+	{
+		//this->m_sales[i] = sales[i];					//TODO: Fix initialization (defaults to -9.25596e+61 for some reason)
+	};	
+	this->m_min = min;
+	this->m_max = max;
+	this->m_average = average;
+};
+
+SALES::SALES::~SALES()
+{
+	std::cout << "object " << this << " destroyed";
 };
