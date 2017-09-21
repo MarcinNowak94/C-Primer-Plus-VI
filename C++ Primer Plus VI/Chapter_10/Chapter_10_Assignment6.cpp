@@ -1,5 +1,6 @@
 #include "../stdafx.h"
 #include "Chapter_10_Functions.h"
+#include "Move.h"
 
 /*
 6.Here’s a class declaration:
@@ -22,8 +23,23 @@ Create member function definitions and a program that exercises the class.
 
 int Chapter_10_Assignment6()
 {
-	std::cout << "\a\nNothing to see here (YET), move along.";
-	std::cout << "\nPress any key to contine..." << std::endl;
+	//std::cout << "\a\nNothing to see here (YET), move along.";
+	//std::cout << "\nPress any key to contine..." << std::endl;
+	Move first;
+	Move second(2, 5);
+	std::cout << "\nInitially:";
+	first.Showmove();
+	std::cout << "\nInitially ";
+	second.Showmove();
+	Move third(first.add(second));
+	std::cout << "\nObject "<< &third << " created via adding " << &second << " to " << &first << ": ";
+	third.Showmove();
+	second.Showmove();
+	std::cout << "\nResetting " << &second;
+	second.reset();
+	std::cout << "\nAfter reset " << &second << " :";
+	second.Showmove();
+	std::cout << "\nPress Any key to continue...";
 	_getch();
 	return 0;
 };
