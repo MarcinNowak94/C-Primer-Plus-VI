@@ -23,8 +23,6 @@ Create member function definitions and a program that exercises the class.
 
 int Chapter_10_Assignment6()
 {
-	//std::cout << "\a\nNothing to see here (YET), move along.";
-	//std::cout << "\nPress any key to contine..." << std::endl;
 	Move first;
 	Move second(2, 5);
 	std::cout << "\nInitially:";

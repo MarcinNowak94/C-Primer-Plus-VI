@@ -1,5 +1,5 @@
-#include "stdafx.h"
-#include "../C++ Primer Plus VI/Chapter_9/golf.h"
+#include "../stdafx.h"
+#include "../Chapter_9/golf.h"
 
 Golf::Golf(char name[], int handicap)
 {
