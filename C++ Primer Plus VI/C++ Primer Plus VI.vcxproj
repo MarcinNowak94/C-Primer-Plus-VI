@@ -143,6 +143,7 @@
     <ClInclude Include="Chapter_10\Chapter_10_Functions.h" />
     <ClInclude Include="Chapter_10\Move.h" />
     <ClInclude Include="Chapter_10\Person.h" />
+    <ClInclude Include="Chapter_10\Plorg.h" />
     <ClInclude Include="Chapter_11\Chapter_11_Functions.h" />
     <ClInclude Include="Chapter_12\Chapter_12_Functions.h" />
     <ClInclude Include="Chapter_7\Chapter_7_Functions.h" />
@@ -190,6 +191,9 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="Chapter_10\Person.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Plorg.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="Chapter_11\Chapter_11.cpp">
@@ -333,7 +337,9 @@
     <ClCompile Include="cls.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Golf_class.cpp" />
+    <ClCompile Include="Chapter_10\Golf_class.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
     <ClCompile Include="stdafx.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

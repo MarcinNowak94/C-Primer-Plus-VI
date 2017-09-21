@@ -1,5 +1,6 @@
 #include "../stdafx.h"
 #include "Chapter_10_Functions.h"
+#include "Plorg.h"
 
 /*
 7.A Betelgeusean plorg has these properties:
@@ -22,8 +23,16 @@ Write a short program that demonstrates all the features of the Plorg class.
 
 int Chapter_10_Assignment7()
 {
-	std::cout << "\a\nNothing to see here (YET), move along.";
-	std::cout << "\nPress any key to contine..." << std::endl;
+	Plorg George("George", 45);
+	George.Display();
+	std::cout << "\n";
+	George.updateCI();
+	George.Display();
+	std::cout << "\nRenaming George to Jim, updating CI to 30 (he preferred his previous name):\n";
+	George.Report("Jim", 30);
+	George.Display();
+	std::cout << "\nJim is up to something ...\n";
+	George.~Plorg();
 	_getch();
 	return 0;
 };

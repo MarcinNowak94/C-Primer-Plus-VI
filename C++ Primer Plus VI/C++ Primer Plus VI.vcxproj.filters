@@ -81,6 +81,9 @@
     <ClInclude Include="Chapter_10\Move.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
+    <ClInclude Include="Chapter_10\Plorg.h">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="stdafx.cpp">
@@ -263,10 +266,13 @@
     <ClCompile Include="Chapter_10\Person.cpp">
       <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
     </ClCompile>
-    <ClCompile Include="Golf_class.cpp">
+    <ClCompile Include="Chapter_10\Move.cpp">
       <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter_10\Move.cpp">
+    <ClCompile Include="Chapter_10\Plorg.cpp">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Golf_class.cpp">
       <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
     </ClCompile>
   </ItemGroup>
