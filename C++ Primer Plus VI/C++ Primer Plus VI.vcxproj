@@ -141,6 +141,7 @@
     <ClInclude Include="chapters.h" />
     <ClInclude Include="Chapter_10\Account.h" />
     <ClInclude Include="Chapter_10\Chapter_10_Functions.h" />
+    <ClInclude Include="Chapter_10\List.h" />
     <ClInclude Include="Chapter_10\Move.h" />
     <ClInclude Include="Chapter_10\Person.h" />
     <ClInclude Include="Chapter_10\Plorg.h" />
@@ -186,6 +187,9 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="Chapter_10\Chapter_10_Assignment8.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\List.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="Chapter_10\Move.cpp">

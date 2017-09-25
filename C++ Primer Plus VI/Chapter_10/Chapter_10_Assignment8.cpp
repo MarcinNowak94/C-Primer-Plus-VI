@@ -1,5 +1,6 @@
 #include "../stdafx.h"
 #include "Chapter_10_Functions.h"
+#include "List.h"
 
 /*
 8.You can describe a simple list as follows:
@@ -26,12 +27,50 @@ Here pf points to a function (not a member function) that takes a reference to I
 where Item is the type for items in the list.The visit() function applies this function to each item in the list.
 You can use the Stack class as a general guide.
 */
+void twotimes(Item & item)
+{
+	std::cout << "\n" << item << "*" << 2 << "=" << (item *= 2);
+};
 
+void plustwo(Item & item)
+{
+	std::cout << "\n" << item << "+" << 2 << "=" << (item += 2);
+};
+
+void minustwo(Item & item)
+{
+	std::cout << "\n" << item << "-" << 2 << "=" << (item -= 2);
+};
+
+void halfof(Item & item)
+{
+	std::cout << "\n" << item << "/" << 2 << "=" << (item /= 2);
+};
 
 int Chapter_10_Assignment8()
 {
-	std::cout << "\a\nNothing to see here (YET), move along.";
-	std::cout << "\nPress any key to contine..." << std::endl;
+	//std::cout << "\a\nNothing to see here (YET), move along.";
+	//std::cout << "\nPress any key to contine..." << std::endl;
+	List list1;
+	int value = 10;
+	std::cout << "\nAdding value=" << value << " to the end of the " << &list1 << " list";
+	std::cout << "\nIs list1 empty?: " << list1.isEmpty();
+	list1.AddItem(value);
+	std::cout << "\nIs list1 empty?: " << list1.isEmpty()
+		<< "\nIs list1 full then?: " << list1.isFull();
+	list1.AddItem(value);
+	list1.visit(plustwo);
+	list1.visit(twotimes);
+	list1.visit(minustwo);
+	list1.visit(halfof);
+	value = 90;
+	std::cout << "\nAdding value=" << value << " to the end of the " << &list1 << " list";
+	list1.AddItem(value);
+	list1.visit(plustwo);
+	list1.visit(twotimes);
+	list1.visit(minustwo);
+	list1.visit(halfof);
+	list1.~List();
 	_getch();
 	return 0;
 };
