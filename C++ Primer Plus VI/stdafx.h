@@ -19,4 +19,7 @@
 #include <vector>
 #include <windows.h>
 
+
+#include "random.h"
+
 // TODO: W tym miejscu odwo³aj siê do dodatkowych nag³ówków wymaganych przez program

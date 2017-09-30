@@ -146,6 +146,12 @@
     <ClInclude Include="Chapter_10\Person.h" />
     <ClInclude Include="Chapter_10\Plorg.h" />
     <ClInclude Include="Chapter_10\Stack.h" />
+    <ClInclude Include="Chapter_11\Chapter_11_Assignment1\vect.h" />
+    <ClInclude Include="Chapter_11\Chapter_11_Assignment2\vect_2.h" />
+    <ClInclude Include="Chapter_11\Chapter_11_Assignment3\vect_3.h" />
+    <ClInclude Include="Chapter_11\Chapter_11_Assignment4\mytime3.h" />
+    <ClInclude Include="Chapter_11\Chapter_11_Assignment5\stonewt.h" />
+    <ClInclude Include="Chapter_11\Chapter_11_Assignment6\stonewt_2.h" />
     <ClInclude Include="Chapter_11\Chapter_11_Functions.h" />
     <ClInclude Include="Chapter_12\Chapter_12_Functions.h" />
     <ClInclude Include="Chapter_7\Chapter_7_Functions.h" />
@@ -153,6 +159,7 @@
     <ClInclude Include="Chapter_9\Chapter_9_Functions.h" />
     <ClInclude Include="Chapter_9\golf.h" />
     <ClInclude Include="Chapter_9\Sales.h" />
+    <ClInclude Include="random.h" />
     <ClInclude Include="simplemenu.h" />
     <ClInclude Include="stdafx.h" />
     <ClInclude Include="targetver.h" />
@@ -207,26 +214,50 @@
     <ClCompile Include="Chapter_11\Chapter_11.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment1.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment1\Chapter_11_Assignment1.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment2.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment1\vect.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment3.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment2\Chapter_11_Assignment2.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment4.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment2\vect_2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment5.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment3\Chapter_11_Assignment3.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment6.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment3\randwalk.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment7.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment3\vect_3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment4\Chapter_11_Assignment4.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment4\mytime3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment4\usetime3.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment5\Chapter_11_Assignment5.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment5\stonewt.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment6\Chapter_11_Assignment6.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment6\stonewt_2.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment7\Chapter_11_Assignment7.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="Chapter_12\Chapter_12.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>

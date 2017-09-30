@@ -1,5 +1,6 @@
-#include "../stdafx.h"
-#include "Chapter_11_Functions.h"
+#include "../../stdafx.h"
+#include "../Chapter_11_Functions.h"
+#include "vect_2.h"
 
 int Chapter_11_Assignment2()
 {
