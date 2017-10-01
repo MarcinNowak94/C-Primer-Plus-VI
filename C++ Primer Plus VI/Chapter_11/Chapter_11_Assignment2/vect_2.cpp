@@ -8,7 +8,7 @@ using std::atan;
 using std::atan2;
 using std::cout;
 
-namespace VECTOR
+namespace VECTOR_2
 {
     // przelicznik radianów na stopnie
     const double Rad_to_deg = 45.0 / atan(1.0);

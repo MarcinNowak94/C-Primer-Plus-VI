@@ -93,9 +93,6 @@
     <ClInclude Include="Chapter_11\Chapter_11_Assignment1\vect.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="random.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="Chapter_11\Chapter_11_Assignment4\mytime3.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
@@ -109,6 +106,9 @@
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="Chapter_11\Chapter_11_Assignment6\stonewt_2.h">
+      <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="random.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>

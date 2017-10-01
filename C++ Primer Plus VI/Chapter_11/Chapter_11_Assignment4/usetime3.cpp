@@ -3,7 +3,7 @@
 #include <iostream>
 #include "mytime3.h"
 
-int main()
+int usetime3()
 {
     using std::cout;
     using std::endl;

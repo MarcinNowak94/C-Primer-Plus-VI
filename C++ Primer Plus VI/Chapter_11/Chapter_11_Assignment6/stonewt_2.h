@@ -2,6 +2,8 @@
 #ifndef STONEWT_H_
 #define STONEWT_H_
 
+namespace Stonewt_2
+{
 class Stonewt
 {
     private:
@@ -16,6 +18,7 @@ class Stonewt
         ~Stonewt();
         void show_lbs() const; // wyświetla masę w funtach
         void show_stn() const; // wyświetla masę w kamieniach
+};
 };
 #endif
 

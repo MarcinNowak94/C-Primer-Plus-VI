@@ -5,10 +5,10 @@
 #include <ctime>      // prototyp funkcji time()
 #include "vect_3.h"
 
-int main()
+int randwalk()
 {
     using namespace std;
-    using VECTOR::Vector;
+    using VECTOR_3::Vector;
     srand(time(0));   // inicjalizacja generatora liczb pseudolosowych
     double direction;
     Vector step;

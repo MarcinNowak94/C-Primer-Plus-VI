@@ -2,7 +2,7 @@
 #include <iostream>
 using std::cout;
 #include "stonewt_2.h"
-
+using namespace Stonewt_2;
 // konstruuje obiekt Stonewt z wartości typu double
 Stonewt::Stonewt(double lbs)
 {
