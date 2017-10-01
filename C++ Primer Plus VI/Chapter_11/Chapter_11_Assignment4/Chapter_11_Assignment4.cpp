@@ -4,8 +4,19 @@
 
 int Chapter_11_Assignment4()
 {
-	std::cout << "\n\aNothing to see here (YET). Move along.";
-	std::cout << "\nPress any key to continue ...";
+	using std::cout;
+	using std::endl;
+	Time aida(3, 35);
+	Time tosca(2, 48);
+	Time temp;
+
+	cout << "Aida i Tosca:\n";
+	cout << aida << "; " << tosca << endl;
+	temp = aida + tosca;           // operator+()
+	cout << "Aida + Tosca: " << temp << endl;
+	temp = aida * 1.17;            // metoda operator*()
+	cout << "Aida * 1.17: " << temp << endl;
+	cout << "10 * Tosca: " << 10.0 * tosca << endl;
 	_getch();
 	return 0;
 };

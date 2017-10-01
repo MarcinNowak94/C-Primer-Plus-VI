@@ -308,9 +308,6 @@
     <ClCompile Include="Chapter_11\Chapter_11_Assignment4\mytime3.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment4\usetime3.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
     <ClCompile Include="Chapter_11\Chapter_11_Assignment5\Chapter_11_Assignment5.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>

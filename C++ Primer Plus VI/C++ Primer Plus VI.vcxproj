@@ -241,9 +241,6 @@
     <ClCompile Include="Chapter_11\Chapter_11_Assignment4\mytime3.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment4\usetime3.cpp">
-      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
-    </ClCompile>
     <ClCompile Include="Chapter_11\Chapter_11_Assignment5\Chapter_11_Assignment5.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
