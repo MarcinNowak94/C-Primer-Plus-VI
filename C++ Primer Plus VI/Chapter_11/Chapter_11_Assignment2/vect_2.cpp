@@ -14,22 +14,10 @@ namespace VECTOR_2
     const double Rad_to_deg = 45.0 / atan(1.0);
     // powinno wyjść około 57.2957795130823
     // metody prywatne
-    // oblicza długość wektora ze składowych x i y
-    void Vector::set_mag()
-    {
-        mag = sqrt(x * x + y * y);
-    }
-
-    void Vector::set_ang()
-    {
-        if (x == 0.0 && y == 0.0)
-            ang = 0.0;
-        else
-            ang = atan2(y, x);
-    }
-
     // oblicza składową x ze współrzędnych biegunowych
-    void Vector::set_x()
+
+    /*
+	void Vector::set_x()
     {
         x = mag * cos(ang);
     }
@@ -39,11 +27,22 @@ namespace VECTOR_2
     {
         y = mag * sin(ang);
     }
+	*/
+
+	double Vector::magval() const
+	{
+		return sqrt(x*x + y*y);
+	};   // zwraca długość
+	
+	double Vector::angval() const
+	{
+		return atan2(y, x) * Rad_to_deg;
+	};   // zwraca kąt
 
     // metody publiczne
     Vector::Vector()          // konstruktor domyślny
     {
-        x = y = mag = ang = 0.0;
+        x = y = 0.0;
         mode = RECT;
     }
 
@@ -56,21 +55,17 @@ namespace VECTOR_2
         {
             x = n1;
             y = n2;
-            set_mag();
-            set_ang();
         }
         else if (form == POL)
         {
-            mag = n1;
-            ang = n2 / Rad_to_deg;
-            set_x();
-            set_y();
+			x = n1*cos(n2);
+			y = n1*sin(n2);
         }
         else
         {
             cout << "Niepoprawna wartość trzeciego argumentu Vector() -- ";
             cout << "zeruję wektor\n";
-            x = y = mag = ang = 0.0;
+            x = y = 0.0;
             mode = RECT;
         }
     }
@@ -84,21 +79,17 @@ namespace VECTOR_2
         {
             x = n1;
             y = n2;
-            set_mag();
-            set_ang();
         }
         else if (form == POL)
         {
-            mag = n1;
-            ang = n2 / Rad_to_deg;
-            set_x();
-            set_y();
+			x = n1*cos(n2);
+			y = n1*sin(n2);
         }
         else
         {
             cout << "Niepoprawny trzeci argument set() -- ";
             cout << "zeruję wektor\n";
-            x = y = mag = ang = 0.0;
+            x = y = 0.0;
             mode = RECT;
         }
     }
@@ -157,12 +148,11 @@ namespace VECTOR_2
             os << "(x,y) = (" << v.x << ", " << v.y << ")";
         else if (v.mode == Vector::POL)
         {
-            os << "(m,a) = (" << v.mag << ", "
-                << v.ang * Rad_to_deg << ")";
+            os << "(m,a) = (" << sqrt(v.x * v.x + v.y * v.y) << ", "
+                << atan2(v.y, v.x) * Rad_to_deg << ")";
         }
         else
             os << "Niepoprawny tryb reprezentacji obiektu wektora";
         return os;
     }
 } // koniec przestrzeni nazw VECTOR
-

@@ -12,12 +12,8 @@ namespace VECTOR_2
         private:
             double x;        // wartość składowej poziomej
             double y;        // wartość składowej pionowej
-            double mag;      // długość wektora
-            double ang;      // kierunek wektora (w stopniach)
             Mode mode;       // RECT lub POL
             // prywatne metody ustawiające składowe
-            void set_mag();
-            void set_ang();
             void set_x();
             void set_y();
         public:
@@ -27,8 +23,8 @@ namespace VECTOR_2
             ~Vector();
             double xval() const {return x;}      // zwraca wartość składowej x
             double yval() const {return y;}      // zwraca wartość składowej y
-            double magval() const {return mag;}  // zwraca długość
-            double angval() const {return ang;}  // zwraca kąt
+			double magval() const;   // zwraca długość
+			double angval() const;   // zwraca kąt
             void polar_mode();    // ustawia tryb na biegunowy (POL)
             void rect_mode();     // ustawia tryb na kartezjański (RECT)
             // metody przeciążające operatory
