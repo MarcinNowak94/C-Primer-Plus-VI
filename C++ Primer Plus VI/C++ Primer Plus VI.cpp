@@ -44,7 +44,7 @@ int main()
 		case 7: input=Chapter_8(); break;
 		case 8: input=Chapter_9(); break;
 		case 9: input=Chapter_10(); break;
-		case 10: {std::cout << "\n\aNo done assignment for Chapter 11. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*Chapter_11();*/ }; break;
+		case 10: input=Chapter_11(); break;
 		case 11: {std::cout << "\n\aNo done assignment for Chapter 12. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*Chapter_12();*/ }; break;
 		case 12: {std::cout << "\n\aNo done assignment for Chapter 13. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*Chapter_13();*/ }; break;
 		case 13: {std::cout << "\n\aNo done assignment for Chapter 14. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*Chapter_14();*/ }; break;

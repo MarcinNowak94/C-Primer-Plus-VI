@@ -18,7 +18,7 @@
 #include <string>
 #include <vector>
 #include <windows.h>
-
+#include <time.h>
 
 #include "random.h"
 
