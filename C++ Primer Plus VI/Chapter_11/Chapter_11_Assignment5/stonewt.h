@@ -6,16 +6,21 @@ class Stonewt
 {
     private:
         enum {Lbs_per_stn = 14}; // liczba funtów na kamień
+		enum state {STN, IPND, FPND};
         int stone;               // masa w całych kamieniach
         double pds_left;         // reszta w funtach
         double pounds;           // masa w funtach
+		state Mode;
     public:
-        Stonewt(double lbs);          // konstruktor dla funtów
-        Stonewt(int stn, double lbs); // konstruktor dla kamieni i funtów
+        Stonewt(double lbs, state st=IPND);          // konstruktor dla funtów
+        Stonewt(int stn, double lbs, state st=STN); // konstruktor dla kamieni i funtów
         Stonewt();                    // konstruktor domyślny
         ~Stonewt();
-        void show_lbs() const; // wyświetla masę w funtach
-        void show_stn() const; // wyświetla masę w kamieniach
+
+		friend std::ostream & operator<<(std::ostream & os, Stonewt & obj);
+		Stonewt operator+(Stonewt & obj) const;								//TODO
+		Stonewt operator-(Stonewt & obj) const;								//TODO
+		Stonewt operator*(Stonewt & obj) const;								//TODO
 };
 #endif
 

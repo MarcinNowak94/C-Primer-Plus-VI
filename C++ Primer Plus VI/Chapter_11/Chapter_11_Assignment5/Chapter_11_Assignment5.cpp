@@ -4,8 +4,22 @@
 
 int Chapter_11_Assignment5()
 {
-	std::cout << "\n\aNothing to see here (YET). Move along.";
-	std::cout << "\nPress any key to continue ...";
+	Stonewt total;
+	Stonewt weight1(60);
+	Stonewt weight2(6, 10);
+	Stonewt weight3(60, 2.76);
+	std::cout << "Weight1: " << weight1
+		<< "Weight2: " << weight2
+		<< "Weight3: " << weight3
+		<< "----------------------------------------------\n"
+		<< "Total: " << total;
+	total = total + weight1;
+	std::cout << "Total + weight1 = " << total;
+	total = total * weight2;
+	std::cout << "Total * weight2 = " << total;
+	total = total - weight3;
+	std::cout << "Total - weight3 = " << total;
+	std::cout << "\nPress any key to exit ...";
 	_getch();
 	return 0;
 };
