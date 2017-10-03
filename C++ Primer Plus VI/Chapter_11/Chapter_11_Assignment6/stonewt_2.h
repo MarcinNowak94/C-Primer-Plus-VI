@@ -18,6 +18,13 @@ class Stonewt
         ~Stonewt();
         void show_lbs() const; // wyświetla masę w funtach
         void show_stn() const; // wyświetla masę w kamieniach
+
+		bool operator!=(Stonewt & obj);
+		bool operator==(Stonewt & obj);
+		bool operator<=(Stonewt & obj);
+		bool operator>=(Stonewt & obj);
+		bool operator<(Stonewt & obj);
+		bool operator>(Stonewt & obj);
 };
 };
 #endif

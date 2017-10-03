@@ -4,8 +4,35 @@
 
 int Chapter_11_Assignment6()
 {
-	std::cout << "\n\aNothing to see here (YET). Move along.";
-	std::cout << "\nPress any key to continue ...";
+	Stonewt_2::Stonewt weightarr[]
+	{
+		{ (int)random(), (double)random() },
+		{(int)random(), (double)random() },
+		{11},
+		{},
+		{},
+		{},
+	};
+	Stonewt_2::Stonewt heavy_one(11, 0);
+	Stonewt_2::Stonewt smallest(DBL_MAX);
+	Stonewt_2::Stonewt largest(DBL_MIN);
+
+	for (size_t i = 3; i < sizeof(weightarr)/sizeof(weightarr[0]); i++)
+	{
+		weightarr[i] = Stonewt_2::Stonewt((int)random(), (double)random());
+	};
+	int eleven_or_more = 0;
+	for (size_t i = 0; i < sizeof(weightarr)/sizeof(weightarr[0]); i++)
+	{
+		std::cout << "\n#" << i << ": ";
+		weightarr[i].show_stn();
+		if (weightarr[i] < smallest) smallest = weightarr[i];
+		if (weightarr[i] > largest) largest = weightarr[i];
+		if (weightarr[i] >= heavy_one) eleven_or_more++;
+	};
+	std::cout << "\nSmallest:\t"; smallest.show_stn();
+	std::cout << "\nLargest:\t"; largest.show_stn();
+	std::cout << "\nThere were " << eleven_or_more << " equal or greater than 11stones.\n";
 	_getch();
 	return 0;
 };

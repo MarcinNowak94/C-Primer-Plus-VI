@@ -18,9 +18,9 @@ class Stonewt
         ~Stonewt();
 
 		friend std::ostream & operator<<(std::ostream & os, Stonewt & obj);
-		Stonewt operator+(Stonewt & obj) const;								//TODO
-		Stonewt operator-(Stonewt & obj) const;								//TODO
-		Stonewt operator*(Stonewt & obj) const;								//TODO
+		Stonewt operator+(Stonewt & obj) const;	
+		Stonewt operator-(Stonewt & obj) const;
+		Stonewt operator*(Stonewt & obj) const;
 };
 #endif
 

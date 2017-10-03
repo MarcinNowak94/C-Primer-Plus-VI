@@ -37,3 +37,34 @@ void Stonewt::show_lbs() const
     cout << pounds << " funtów\n";
 }
 
+
+bool Stonewt::operator!=(Stonewt & obj)
+{
+	if (this->pounds != obj.pounds) return true;
+	return false;
+};
+bool Stonewt::operator== (Stonewt & obj)
+{
+	if (this->pounds == obj.pounds) return true;
+	return false;
+};
+bool Stonewt::operator<= (Stonewt & obj) 
+{
+	if (this->pounds <= obj.pounds) return true;
+	return false;
+};
+bool Stonewt::operator>= (Stonewt & obj)
+{
+	if (this->pounds >= obj.pounds) return true;
+	return false;
+};
+bool Stonewt::operator< (Stonewt & obj)
+{
+	if (this->pounds < obj.pounds) return true;
+	return false;
+};
+bool Stonewt::operator> (Stonewt & obj)
+{
+	if (this->pounds > obj.pounds) return true;
+	return false;
+};
