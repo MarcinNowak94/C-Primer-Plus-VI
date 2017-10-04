@@ -1,15 +1,12 @@
 #include "../../stdafx.h"
 #include "../Chapter_11_Functions.h"
-//#include "complex0.h"  // to avoid confusion with complex.h
+#include "complex0.h"  // to avoid confusion with complex.h
 
 
 int Chapter_11_Assignment7()
 {
-	std::cout << "\n\aNothing to see here (YET). Move along.";
-	std::cout << "\nPress any key to continue ...";
-	_getch();
-	return 0;
-	/*
+	using namespace std;
+	
 	complex a(3.0, 4.0);   // initialize to (3,4i)
 	complex c;
 	cout << "Enter a complex number (q to quit):\n";
@@ -17,7 +14,7 @@ int Chapter_11_Assignment7()
 	{
 	cout << "c is " << c << '\n';
 	cout << "complex conjugate is " << ~c << '\n';
-	cout << "a is " << a << '\n";
+	cout << "a is " << a << '\n';
 	cout << "a + c is " << a + c << '\n';
 	cout << "a - c is " << a - c << '\n';
 	cout << "a * c is " << a * c << '\n';
@@ -25,8 +22,8 @@ int Chapter_11_Assignment7()
 	cout << "Enter a complex number (q to quit):\n";
 	}
 	cout << "Done!\n";
+	_getch();
 	return 0;
-	*/
 };
 
 
@@ -34,7 +31,7 @@ int Chapter_11_Assignment7()
 7. A complex number has two parts : a real part and an imaginary part.One way to
 write an imaginary number is this : (3.0, 4.0).Here 3.0 is the real part and 4.0 is
 the imaginary part.Suppose a = (A, Bi) and c = (C, Di).Here are some complex operations :
--Addition : a + c = (A + C, (B + D)i)
+- Addition : a + c = (A + C, (B + D)i)
 - Subtraction : a - c = (A - C, (B - D)i)
 - Multiplication : a × c = (A × C - B×D, (A×D + B×C)i)
 - Multiplication : (x a real number) : x × c = (x×C, x×Di)

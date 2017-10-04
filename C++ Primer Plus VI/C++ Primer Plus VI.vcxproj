@@ -152,6 +152,7 @@
     <ClInclude Include="Chapter_11\Chapter_11_Assignment4\mytime3.h" />
     <ClInclude Include="Chapter_11\Chapter_11_Assignment5\stonewt.h" />
     <ClInclude Include="Chapter_11\Chapter_11_Assignment6\stonewt_2.h" />
+    <ClInclude Include="Chapter_11\Chapter_11_Assignment7\complex0.h" />
     <ClInclude Include="Chapter_11\Chapter_11_Functions.h" />
     <ClInclude Include="Chapter_12\Chapter_12_Functions.h" />
     <ClInclude Include="Chapter_7\Chapter_7_Functions.h" />
@@ -225,6 +226,7 @@
     </ClCompile>
     <ClCompile Include="Chapter_11\Chapter_11_Assignment2\vect_2.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="Chapter_11\Chapter_11_Assignment3\Chapter_11_Assignment3.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
@@ -254,6 +256,9 @@
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">NotUsing</PrecompiledHeader>
     </ClCompile>
     <ClCompile Include="Chapter_11\Chapter_11_Assignment7\Chapter_11_Assignment7.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment7\complex0.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="Chapter_12\Chapter_12.cpp">
