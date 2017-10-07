@@ -1,5 +1,6 @@
-#include "../stdafx.h"
-#include "Chapter_12_Functions.h"
+#include "../../stdafx.h"
+#include "../Chapter_12_Functions.h"
+#include "Ch12_A6_queue.h"
 
 
 int Chapter_12_Assignment6()

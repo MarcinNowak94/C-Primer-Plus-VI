@@ -154,6 +154,12 @@
     <ClInclude Include="Chapter_11\Chapter_11_Assignment6\stonewt_2.h" />
     <ClInclude Include="Chapter_11\Chapter_11_Assignment7\complex0.h" />
     <ClInclude Include="Chapter_11\Chapter_11_Functions.h" />
+    <ClInclude Include="Chapter_12\Chapter_12_Assignment1\Cow.h" />
+    <ClInclude Include="Chapter_12\Chapter_12_Assignment2\string2.h" />
+    <ClInclude Include="Chapter_12\Chapter_12_Assignment3\stock20.h" />
+    <ClInclude Include="Chapter_12\Chapter_12_Assignment4\C12_A4_Stack.h" />
+    <ClInclude Include="Chapter_12\Chapter_12_Assignment5\queue.h" />
+    <ClInclude Include="Chapter_12\Chapter_12_Assignment6\Ch12_A6_queue.h" />
     <ClInclude Include="Chapter_12\Chapter_12_Functions.h" />
     <ClInclude Include="Chapter_7\Chapter_7_Functions.h" />
     <ClInclude Include="Chapter_8\Chapter_8_Functions.h" />
@@ -264,23 +270,41 @@
     <ClCompile Include="Chapter_12\Chapter_12.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment1.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment1\Chapter_12_Assignment1.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment2.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment1\Cow.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment3.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment2\Chapter_12_Assignment2.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment4.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment2\string2.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment5.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment3\Chapter_12_Assignment3.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment6.cpp">
-      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment3\stock20.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment4\Chapter_12_Assignment4.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment4\C12_A4_Stack.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment5\Chapter_12_Assignment5.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment5\queue.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment6\Chapter_12_Assignment6.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment6\Ch12_A6_queue.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="Chapter_2\Chapter_2.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
