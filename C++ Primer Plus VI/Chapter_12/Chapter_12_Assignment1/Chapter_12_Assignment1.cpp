@@ -4,8 +4,26 @@
 
 int Chapter_12_Assignment1()
 {
-	std::cout << "\n\aNothing to see here (YET). Move along.";
-	std::cout << "\nPress any key to continue ...";
+	{
+		Cow BovineTab[]
+		{
+			{ "Bernie", "Eating grass", 200 },
+			{},
+			{ "Fred", "World domination", 350 }
+		};
+		for (size_t i = 0; i < sizeof(BovineTab) / sizeof(BovineTab[0]); i++)
+		{
+			std::cout << "Bovine #" << i + 1 << ":\n";
+			BovineTab[i].ShowCow();
+		};
+		std::cout << "\n\nMysterious cow is up to something ...";
+		BovineTab[1] = Cow("ShadyCow", "totaly benevolent stuff", 349);
+		for (size_t i = 0; i < sizeof(BovineTab) / sizeof(BovineTab[0]); i++)
+		{
+			std::cout << "Bovine #" << i + 1 << ":\n";
+			BovineTab[i].ShowCow();
+		};
+	};				//block of instructions where all cows meet their demise
 	_getch();
 	return 0;
 };
