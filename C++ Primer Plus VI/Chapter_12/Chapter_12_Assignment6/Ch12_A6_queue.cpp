@@ -3,7 +3,7 @@
 
 #include "Ch12_A6_queue.h"
 #include <cstdlib>   // (albo stdlib.h) -- funkcja rand()
-
+using namespace Ch12_A6;
 // metody klasy Queue
 Queue::Queue(int qs) : qsize(qs)
 {

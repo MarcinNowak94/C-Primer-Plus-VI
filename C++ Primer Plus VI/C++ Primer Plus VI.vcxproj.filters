@@ -129,7 +129,7 @@
     <ClInclude Include="Chapter_12\Chapter_12_Assignment6\Ch12_A6_queue.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter_12\Chapter_12_Assignment4\C12_A4_Stack.h">
+    <ClInclude Include="Chapter_12\Chapter_12_Assignment4\Stack_2.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
   </ItemGroup>
@@ -368,7 +368,7 @@
     <ClCompile Include="Chapter_11\Chapter_11_Assignment1\Chapter_11_Assignment1.cpp">
       <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment4\C12_A4_Stack.cpp">
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment4\Stack_2.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
   </ItemGroup>

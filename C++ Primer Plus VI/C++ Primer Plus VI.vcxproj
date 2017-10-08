@@ -157,7 +157,7 @@
     <ClInclude Include="Chapter_12\Chapter_12_Assignment1\Cow.h" />
     <ClInclude Include="Chapter_12\Chapter_12_Assignment2\string2.h" />
     <ClInclude Include="Chapter_12\Chapter_12_Assignment3\stock20.h" />
-    <ClInclude Include="Chapter_12\Chapter_12_Assignment4\C12_A4_Stack.h" />
+    <ClInclude Include="Chapter_12\Chapter_12_Assignment4\Stack_2.h" />
     <ClInclude Include="Chapter_12\Chapter_12_Assignment5\queue.h" />
     <ClInclude Include="Chapter_12\Chapter_12_Assignment6\Ch12_A6_queue.h" />
     <ClInclude Include="Chapter_12\Chapter_12_Functions.h" />
@@ -291,7 +291,7 @@
     <ClCompile Include="Chapter_12\Chapter_12_Assignment4\Chapter_12_Assignment4.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment4\C12_A4_Stack.cpp">
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment4\Stack_2.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="Chapter_12\Chapter_12_Assignment5\Chapter_12_Assignment5.cpp">

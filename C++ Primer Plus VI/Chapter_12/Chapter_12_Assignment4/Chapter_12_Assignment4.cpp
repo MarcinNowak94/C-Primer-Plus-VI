@@ -1,6 +1,6 @@
 #include "../../stdafx.h"
 #include "../Chapter_12_Functions.h"
-#include "C12_A4_Stack.h"
+#include "Stack_2.h"
 
 
 int Chapter_12_Assignment4()
