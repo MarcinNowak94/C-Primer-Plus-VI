@@ -6,9 +6,6 @@ using namespace std;
 
 int Chapter_12_Assignment2()
 {
-	std::cout << "\n\aNothing to see here (YET). Move along.";
-	std::cout << "\nPress any key to continue ...";
-	/*
 	String s1(" and I am a C++ student.");
 	String s2 = "Please enter your name: ";
 	String s3; cout << s2;                 // overloaded << operator 
@@ -38,8 +35,6 @@ int Chapter_12_Assignment2()
 		else cout << "Try again!\n";
 	} 
 	cout << "Bye\n";
-	*/
-
 	_getch();
 	return 0;
 };
