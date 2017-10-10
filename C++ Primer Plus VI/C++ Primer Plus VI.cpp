@@ -7,6 +7,7 @@
 
 int main()
 {
+	system("chcp 65001");
 	std::string options[]
 	{
 		"Chapter 1:\tGetting Started with C++ ",

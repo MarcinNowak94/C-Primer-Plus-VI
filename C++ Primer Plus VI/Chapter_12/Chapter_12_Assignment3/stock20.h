@@ -6,11 +6,12 @@
 class Stock
 {
     private:
-        std::string company;
+        char* company;
         int shares;
         double share_val;
         double total_val;
         void set_tot() { total_val = shares * share_val; }
+		static const int arsize = 30;
     public:
         Stock();                // konstruktor domyślny
         Stock(const std::string & co, long n = 0, double pr = 0.0);

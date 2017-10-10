@@ -7,6 +7,8 @@
 // konstruktory
 Stock::Stock()                   // konstruktor domyślny
 {
+	char* chrptr = new char[arsize];
+	company = chrptr;
     company = "bez nazwy";
     shares = 0;
     share_val = 0.0;
@@ -15,8 +17,12 @@ Stock::Stock()                   // konstruktor domyślny
 
 Stock::Stock(const std::string & co, long n, double pr)
 {
-    company = co;
-
+	char* chrptr = new char[arsize];
+	company = chrptr;
+	for (size_t i = 0; i <= co.length(); i++)
+	{
+		company[i] = co[i];
+	};
     if (n < 0)
     {
         std::cout << "Liczba udziałów nie może być ujemna; "
@@ -32,6 +38,7 @@ Stock::Stock(const std::string & co, long n, double pr)
 // destruktor klasy
 Stock::~Stock()               // wersja "dyskretna"
 {
+	delete[] this->company;
 }
 
 // pozostałe metody
