@@ -5,8 +5,41 @@
 
 int Chapter_12_Assignment4()
 {
-	std::cout << "\n\aNothing to see here (YET). Move along.";
-	std::cout << "\nPress any key to continue ...";
+	using namespace Stack_2;
+	typedef unsigned long Item;
+	const int arsize = 10;
+	Item itemarr[10]{ random(),random(), random(), random(), random(), random(), random(), random(), random(), random() };
+	Stack itemstack;
+	std::cout << "Item array initialized with values:\n";
+	for (size_t i = 0; i < arsize; i++)
+	{
+		std::cout << "Item array element #" << i << ": " << itemarr[i] << '\n';
+		
+	};
+	std::cout << "\n\nPushing Item array to itemstack "<< &itemstack << ":\n";
+	for (size_t i = 0; i < arsize; i++)
+	{
+		//std::cout << "Item array alement #" << i << ": " << itemarr[i] << '\n';
+		itemstack.push(itemarr[i]);
+	};
+	Stack anotherstack = itemstack;
+	std::cout << "\n\nCopy of itemstack " << &itemstack << " saved in anotherstack" << &anotherstack << ".\n";
+	std::cout << "\nPopping items from itemstack " << &itemstack << ":\n";
+	for (size_t i = 0; i < arsize; i++)
+	{
+		itemstack.pop(itemarr[i]);
+	};
+	std::cout << "\n\nAssigning some item array elements boack to itemstack " << &itemstack <<":\n";
+	for (size_t i = 0; i < random(2, 7); i++)
+	{
+		itemstack.push(itemarr[i]);
+	};
+	std::cout << "\n\nLet's take a look at  anotherstack " << &anotherstack << " then:\n";
+	size_t i = 0;
+	while (!anotherstack.isempty())
+	{
+		anotherstack.pop(itemarr[i++]);
+	};
 	_getch();
 	return 0;
 };
