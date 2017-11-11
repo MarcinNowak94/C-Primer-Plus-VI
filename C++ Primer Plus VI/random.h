@@ -12,6 +12,16 @@ T1 random(T1 min = 0, T1 max = 100)
 	return dist(mt);
 };
 
-//TODO: Specification for real numbers
+template<>
+double random<double>(double min, double max)
+{
+	std::random_device rd;
+	std::mt19937 mt(rd());
+	std::uniform_real_distribution<double> dist(min, max);
+	return dist(mt);
+	//TODO: Test 
+};
+
+
 
 #endif // !RANDOM_H
