@@ -21,7 +21,7 @@ Stonewt::Stonewt(int stn, double lbs)
 
 Stonewt::Stonewt() // konstruktor domyślny, zeruje obiekt
 {
-    stone = pounds = pds_left = 0;
+    stone = pds_left = pounds = 0;
 }
 Stonewt::~Stonewt() // destruktor
 {

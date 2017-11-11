@@ -48,9 +48,9 @@ int variant1()
 	int someint2 = 2;
 	chaff* chafftab;
 	chafftab = new chaff[arsize];
-	std::strcpy(chafftab[0].dross, first);
+	strcpy_s(chafftab[0].dross, first);
 	chafftab[0].slag = someint1;
-	std::strcpy(chafftab[1].dross, second);
+	strcpy_s(chafftab[1].dross, second);
 	chafftab[1].slag = someint2;
 	std::cout << "\nVariant 1:\n"
 		<< "Chaff structures :\n\n";
@@ -72,9 +72,9 @@ int variant2()
 	int someint2 = 2;
 	chaff* chafftab;
 	chafftab = new (buffer) chaff[arsize];
-	std::strcpy(chafftab[0].dross, first);
+	strcpy_s(chafftab[0].dross, first);
 	chafftab[0].slag = someint1;
-	std::strcpy(chafftab[1].dross, second);
+	strcpy_s(chafftab[1].dross, second);
 	chafftab[1].slag = someint2;
 	std::cout << "\nVariant 2:\n"
 		<< "Chaff structures inside buffer (at " << &buffer << "-" <<&buffer+(sizeof(buffer)*buffersize) << "):\n\n";

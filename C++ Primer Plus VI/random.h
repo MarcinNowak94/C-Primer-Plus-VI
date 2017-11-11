@@ -8,20 +8,13 @@ T1 random(T1 min = 0, T1 max = 100)
 {
 	std::random_device rd;
 	std::mt19937 mt(rd());
+	if (typeid(T1) == typeid(float) || typeid(T1) == typeid(double))
+	{
+		std::uniform_real_distribution<double> dist(min, max);
+		return dist(mt);
+	};
 	std::uniform_int_distribution<int> dist(min, max);
 	return dist(mt);
 };
-
-template<>
-double random<double>(double min, double max)
-{
-	std::random_device rd;
-	std::mt19937 mt(rd());
-	std::uniform_real_distribution<double> dist(min, max);
-	return dist(mt);
-	//TODO: Test 
-};
-
-
 
 #endif // !RANDOM_H

@@ -60,9 +60,9 @@ int One_writing()
 	char csurname[80] =" ";
 	std::cin >> csurname;
 	char ccombined[160]=" ";
-	std::strcpy(ccombined, cname);			//copies content of cname to ccombined
-	std::strcat(ccombined, ", ");			// adds specified characters to ccombined
-	std::strcat(ccombined, csurname);		//  -----||-----
+	strcpy_s(ccombined, cname);			//copies content of cname to ccombined
+	strcat_s(ccombined, ", ");			// adds specified characters to ccombined
+	strcat_s(ccombined, csurname);		//  -----||-----
 	std::cout << "Here are all the infrmations displayed as continuous text : "
 		<< ccombined << "\n";
 	_getch();

@@ -18,7 +18,7 @@ int Chapter_11_Assignment3()
 	Vector result(0.0, 0.0);
 	unsigned long steps = 0;
 	double target = random(100,200);
-	double dstep = random(double(1), target - 1);
+	double dstep = random<double>(1, target - 1);
 	int trials = 0;
 	double min = DBL_MAX;
 	double max = DBL_MIN;

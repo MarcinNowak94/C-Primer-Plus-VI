@@ -37,7 +37,7 @@ void Imperial_BMI()
 	const float inchesToMetres = 0.0254, poundsToKilograms = 2.2;
 	int feet, inches;
 	float pounds, metres, kilograms;
-	pounds = feet = inches = metres = kilograms = 0;
+	feet = inches = pounds = metres = kilograms = float(0);
 	std::cout << "Specify your dimensions in:\n"
 		<< "Height(feet<space>inches): ";
 		std::cin >> feet;
