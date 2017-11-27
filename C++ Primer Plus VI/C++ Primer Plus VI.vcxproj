@@ -161,6 +161,7 @@
     <ClInclude Include="Chapter_12\Chapter_12_Assignment5\queue.h" />
     <ClInclude Include="Chapter_12\Chapter_12_Assignment6\Ch12_A6_queue.h" />
     <ClInclude Include="Chapter_12\Chapter_12_Functions.h" />
+    <ClInclude Include="Chapter_13\Chapter_13_Functions.h" />
     <ClInclude Include="Chapter_7\Chapter_7_Functions.h" />
     <ClInclude Include="Chapter_8\Chapter_8_Functions.h" />
     <ClInclude Include="Chapter_9\Chapter_9_Functions.h" />
@@ -306,6 +307,11 @@
     <ClCompile Include="Chapter_12\Chapter_12_Assignment6\Ch12_A6_queue.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
+    <ClCompile Include="Chapter_13\Chapter_13.cpp" />
+    <ClCompile Include="Chapter_13\Chapter_13_Assignment1\Chapter_13_Assignment1.cpp" />
+    <ClCompile Include="Chapter_13\Chapter_13_Assignment2\Chapter_13_Assignment2.cpp" />
+    <ClCompile Include="Chapter_13\Chapter_13_Assignment3\Chapter_13_Assignment3.cpp" />
+    <ClCompile Include="Chapter_13\Chapter_13_Assignment4\Chapter_13_Assignment4.cpp" />
     <ClCompile Include="Chapter_2\Chapter_2.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>

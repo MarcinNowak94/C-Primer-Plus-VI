@@ -3,14 +3,6 @@
 #include "../simplemenu.h"
 #include "Chapter_12_Functions.h" 
 
-/*
-int Chapter_12_Assignment1(); //TODO: Chapter_12_Assignment1
-int Chapter_12_Assignment2(); //TODO: Chapter_12_Assignment2
-int Chapter_12_Assignment3(); //TODO: Chapter_12_Assignment3
-int Chapter_12_Assignment4(); //TODO: Chapter_12_Assignment4
-int Chapter_12_Assignment5(); //TODO: Chapter_12_Assignment5
-int Chapter_12_Assignment6(); //TODO: Chapter_12_Assignment6
-*/
 int Chapter_12()
 {
 	std::string options[]
