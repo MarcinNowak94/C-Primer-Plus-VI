@@ -7,7 +7,7 @@
 
 int main()
 {
-	system("chcp 65001");
+	//system("chcp 65001");	//this one causes an error after 7th line of menu
 	std::string options[]
 	{
 		"Chapter 1:\tGetting Started with C++ ",
@@ -47,12 +47,12 @@ int main()
 		case 9: input=Chapter_10(); break;
 		case 10: input=Chapter_11(); break;
 		case 11: input=Chapter_12(); break;
-		case 12: {std::cout << "\n\aNo done assignment for Chapter 13. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*Chapter_13();*/ }; break;
-		case 13: {std::cout << "\n\aNo done assignment for Chapter 14. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*Chapter_14();*/ }; break;
-		case 14: {std::cout << "\n\aNo done assignment for Chapter 15. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*Chapter_15();*/ }; break;
-		case 15: {std::cout << "\n\aNo done assignment for Chapter 16. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*Chapter_16();*/ }; break;
-		case 16: {std::cout << "\n\aNo done assignment for Chapter 17. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*Chapter_17();*/ }; break;
-		case 17: {std::cout << "\n\aNo done assignment for Chapter 18. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*Chapter_18();*/ }; break;
+		case 12: input=Chapter_13(); break;
+		case 13: {std::cout << "\n\aNo done assignment for Chapter 14. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*input=Chapter_14();*/ }; break;
+		case 14: {std::cout << "\n\aNo done assignment for Chapter 15. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*input=Chapter_15();*/ }; break;
+		case 15: {std::cout << "\n\aNo done assignment for Chapter 16. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*input=Chapter_16();*/ }; break;
+		case 16: {std::cout << "\n\aNo done assignment for Chapter 17. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*input=Chapter_17();*/ }; break;
+		case 17: {std::cout << "\n\aNo done assignment for Chapter 18. Better luck next time though.\n" << "Press any key to continue ...\n"; _getch(); /*input=Chapter_18();*/ }; break;
 		case 18: {std::cout << "\a\nFarewell!" << std::endl; _getch(); }; return EXIT_SUCCESS;
 		default:break;
 		}

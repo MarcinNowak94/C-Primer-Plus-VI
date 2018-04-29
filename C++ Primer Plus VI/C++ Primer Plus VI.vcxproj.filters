@@ -31,6 +31,9 @@
     <Filter Include="Pliki źródłowe\Chapter 12 Assignments">
       <UniqueIdentifier>{11874db3-99f5-4df1-97ee-07bc26d35326}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki źródłowe\Chapter 13 Assignments">
+      <UniqueIdentifier>{258f0bb7-1d77-41a3-a05a-405784e9bd42}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -134,6 +137,12 @@
     </ClInclude>
     <ClInclude Include="Chapter_13\Chapter_13_Functions.h">
       <Filter>Pliki nagłówkowe</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_13\Chapter_13_Assignment1\cd.h">
+      <Filter>Pliki źródłowe\Chapter 13 Assignments</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_13\Chapter_13_Assignment1\classic.h">
+      <Filter>Pliki źródłowe\Chapter 13 Assignments</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -287,51 +296,6 @@
     <ClCompile Include="Chapter_10\Golf_class.cpp">
       <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter_10\Stack.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_10\List.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment1\vect.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment3\randwalk.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment4\mytime3.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment5\stonewt.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment2\vect_2.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment3\vect_3.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment6\stonewt_2.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_11\Chapter_11_Assignment7\complex0.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment1\Cow.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment2\string2.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment3\stock20.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment5\queue.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment6\Ch12_A6_queue.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
     <ClCompile Include="Chapter_12\Chapter_12_Assignment6\Chapter_12_Assignment6.cpp">
       <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
     </ClCompile>
@@ -371,23 +335,74 @@
     <ClCompile Include="Chapter_11\Chapter_11_Assignment1\Chapter_11_Assignment1.cpp">
       <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter_12\Chapter_12_Assignment4\Stack_2.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
     <ClCompile Include="Chapter_13\Chapter_13.cpp">
       <Filter>Pliki źródłowe</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter_13\Chapter_13_Assignment1\Chapter_13_Assignment1.cpp">
-      <Filter>Pliki źródłowe</Filter>
-    </ClCompile>
-    <ClCompile Include="Chapter_13\Chapter_13_Assignment2\Chapter_13_Assignment2.cpp">
-      <Filter>Pliki źródłowe</Filter>
+    <ClCompile Include="Chapter_13\Chapter_13_Assignment4\Chapter_13_Assignment4.cpp">
+      <Filter>Pliki źródłowe\Chapter 13 Assignments</Filter>
     </ClCompile>
     <ClCompile Include="Chapter_13\Chapter_13_Assignment3\Chapter_13_Assignment3.cpp">
-      <Filter>Pliki źródłowe</Filter>
+      <Filter>Pliki źródłowe\Chapter 13 Assignments</Filter>
     </ClCompile>
-    <ClCompile Include="Chapter_13\Chapter_13_Assignment4\Chapter_13_Assignment4.cpp">
-      <Filter>Pliki źródłowe</Filter>
+    <ClCompile Include="Chapter_13\Chapter_13_Assignment2\Chapter_13_Assignment2.cpp">
+      <Filter>Pliki źródłowe\Chapter 13 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_13\Chapter_13_Assignment1\Chapter_13_Assignment1.cpp">
+      <Filter>Pliki źródłowe\Chapter 13 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment1\Cow.cpp">
+      <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\List.cpp">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_10\Stack.cpp">
+      <Filter>Pliki źródłowe\Chapter 10 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment1\vect.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment2\vect_2.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment3\randwalk.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment3\vect_3.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment6\stonewt_2.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment5\stonewt.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment4\mytime3.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_11\Chapter_11_Assignment7\complex0.cpp">
+      <Filter>Pliki źródłowe\Chapter 11 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment5\queue.cpp">
+      <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment4\Stack_2.cpp">
+      <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment3\stock20.cpp">
+      <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment2\string2.cpp">
+      <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_12\Chapter_12_Assignment6\Ch12_A6_queue.cpp">
+      <Filter>Pliki źródłowe\Chapter 12 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_13\Chapter_13_Assignment1\cd.cpp">
+      <Filter>Pliki źródłowe\Chapter 13 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_13\Chapter_13_Assignment1\classic.cpp">
+      <Filter>Pliki źródłowe\Chapter 13 Assignments</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>

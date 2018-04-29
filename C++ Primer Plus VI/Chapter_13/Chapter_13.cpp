@@ -8,7 +8,7 @@ int Chapter_13()
 {
 	std::string options[]
 	{
-		"Assignment 1:\t",
+		"Assignment 1:\tCd base class & Classic derived class",
 		"Assignment 2:\t",
 		"Assignment 3:\t",
 		"Assignment 4:\t"
