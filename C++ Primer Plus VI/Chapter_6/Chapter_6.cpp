@@ -305,7 +305,6 @@ int File_character_counter()
 	{
 		llinumber_of_characters++;
 		testfile >> hlp;
-		
 	}
 	std::cout << "There are " << llinumber_of_characters-1 << " of characters in testfile.txt\n"; //program reads NUL as well
 	_getch();

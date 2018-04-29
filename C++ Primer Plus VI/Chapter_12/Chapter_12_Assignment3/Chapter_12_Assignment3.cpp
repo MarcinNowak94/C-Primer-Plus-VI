@@ -5,7 +5,7 @@
 const int STKS = 4;
 int usestock20()
 {
-	// utwórz tablicê zainicjalizowanych obiektów
+	// create an array of initialized objects
 	Stock stocks[STKS] = {
 		Stock("NanoSmart", 12, 20.0),
 		Stock("BurakPOL", 200, 2.0),
@@ -17,11 +17,11 @@ int usestock20()
 	int st;
 	for (st = 0; st < STKS; st++)
 		stocks[st].show();
-	// ustawienie wskaŸnika na pierwszy element
+	// first element pointer freeing
 	const Stock * top = &stocks[0];
 	for (st = 0; st < STKS; st++)
 		top = &top->topval(stocks[st]);
-	// teraz top wskazuje do najbardziej wartoœciowych udzia³ów w portfelu
+	// now top points to most valuable stocks
 	std::cout << "\nNajbardziej wartoœciowy pakiet:\n";
 	top->show();
 	return 0;

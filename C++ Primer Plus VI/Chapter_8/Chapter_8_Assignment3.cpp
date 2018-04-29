@@ -20,7 +20,6 @@ int Chapter_8_Assignment3()
 			std::cout << templatestring;
 		}
 	};
-	
 	std::cout << "\nPress any key to exit ..." << std::endl;
 	_getch();
 	return 0;
@@ -35,7 +34,6 @@ inline void uppercaseit(std::string& givenstring)
 			givenstring[i] = toupper(givenstring[i]);
 		};
 	}
-	//std::cout << givenstring;
 	return;
 };
 

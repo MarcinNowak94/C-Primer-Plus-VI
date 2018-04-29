@@ -6,7 +6,7 @@ long double Chance(unsigned int, unsigned int);
 int Chapter_7_Assignment4()
 {
 	std::cout << "Assignment 4 :\n" << std::endl;
-	//5 liczb z przedzia³u <1,47>, powerball z <1,27> prawd5*prawdpowerball
+	//5 numbers in <1,47> range, powerball in <1,27> prawd5*prawdpowerball
 	std::cout << "Chance of winning lottery where:\n"
 		<< "- You pick 5 numbers from 1 to 47\n"
 		<< "- You pick additional number from 1 to 27\n"

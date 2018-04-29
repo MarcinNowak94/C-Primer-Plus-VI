@@ -40,7 +40,7 @@ int Chapter_7_Assignment8()
 {
 	
 	std::cout << "Assignment 8 :\n" << std::endl;
-	//Version1();
+	Version1();
 	Version2();
 	std::cout << "\nPress any key to continue..." << std::endl;
 	_getch();
