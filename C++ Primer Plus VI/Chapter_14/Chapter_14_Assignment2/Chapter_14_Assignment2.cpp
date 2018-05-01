@@ -1,0 +1,47 @@
+#include "../Chapter_14_Functions.h"
+#include "../../stdafx.h"
+
+int Chapter_14_Assignment2()
+{
+	std::cout << "\nNothing to see here (YET). Move along."
+		<< "\nPress any key to go back to menu...\n";
+	/*using std::cin;
+	using std::cout;
+	using std::endl;
+
+	cout << "Enter name of wine: ";
+	char lab[50];
+	cin.getline(lab, 50);
+	cout << "Enter number of years: ";
+	int yrs;
+	cin >> yrs;
+
+	Wine holding(lab, yrs); // store label, years, give arrays yrs elements
+	holding.GetBottles();   // solicit input for year, bottle count
+	holding.Show();         // display object contents
+
+	const int YRS = 3;
+	int y[YRS] = { 1993, 1995, 1998 };
+	int b[YRS] = { 48, 60, 72 };
+	// create new object, initialize using data in arrays y and b
+	Wine more("Gushing Grape Red",YRS, y, b);
+	more.Show();
+	cout << "Total bottles for " << more.Label() // use Label() method
+	<< ": " << more.sum() << endl;          // use sum() method
+	cout << "Bye\n";*/
+	_getch();
+	return 0;
+};
+
+/*
+This exercise is the same as Programming Exercise 1,except that you should use
+private inheritance instead of containment.Again,a few typedefs might prove handy.
+Also you might contemplate the meaning of statements such as the following:
+PairArray::operator=(PairArray(ArrayInt(),ArrayInt()));
+cout  << (const string &)(*this);
+
+The class should work with the same test program as shown in Programming Exercise 1.
+*/
+
+//date of creation: 29.04.2017
+//Created by: Marcin Nowak

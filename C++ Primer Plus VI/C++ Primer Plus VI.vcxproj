@@ -164,6 +164,15 @@
     <ClInclude Include="Chapter_13\Chapter_13_Assignment1\cd.h" />
     <ClInclude Include="Chapter_13\Chapter_13_Assignment1\classic.h" />
     <ClInclude Include="Chapter_13\Chapter_13_Functions.h" />
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment1\winec.h" />
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment3\workermi.h" />
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment4\BadDude.h" />
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment4\Card.h" />
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment4\emp.h" />
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment4\Gunslinger.h" />
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment4\Person.h" />
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment4\PokerPlayer.h" />
+    <ClInclude Include="Chapter_14\Chapter_14_Functions.h" />
     <ClInclude Include="Chapter_7\Chapter_7_Functions.h" />
     <ClInclude Include="Chapter_8\Chapter_8_Functions.h" />
     <ClInclude Include="Chapter_9\Chapter_9_Functions.h" />
@@ -372,6 +381,48 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="Chapter_13\Chapter_13_Assignment4\Chapter_13_Assignment4.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment1\Chapter_14_Assignment1.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment1\winec.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment2\Chapter_14_Assignment2.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment3\Chapter_14_Assignment3.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment3\workermi.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\BadDude.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\Card.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\Chapter_14_Assignment4.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\emp.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\Gunslinger.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\Person.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\PokerPlayer.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment5\Chapter_14_Assignment5.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="Chapter_2\Chapter_2.cpp">

@@ -34,6 +34,12 @@
     <Filter Include="Pliki źródłowe\Chapter 13 Assignments">
       <UniqueIdentifier>{258f0bb7-1d77-41a3-a05a-405784e9bd42}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Pliki nagłówkowe\Chapters">
+      <UniqueIdentifier>{2ce23fce-af3f-48f5-9f7f-47d5dea57408}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Pliki źródłowe\Chapter 14 Assignments">
+      <UniqueIdentifier>{27e315ef-857b-4df1-843e-d81a7f78ec2a}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <Text Include="ReadMe.txt" />
@@ -48,31 +54,10 @@
     <ClInclude Include="simplemenu.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="chapters.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter_7\Chapter_7_Functions.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter_8\Chapter_8_Functions.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter_9\Chapter_9_Functions.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="Chapter_9\golf.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="Chapter_9\Sales.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter_10\Chapter_10_Functions.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter_11\Chapter_11_Functions.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
-    <ClInclude Include="Chapter_12\Chapter_12_Functions.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
     <ClInclude Include="Chapter_10\Account.h">
@@ -135,14 +120,62 @@
     <ClInclude Include="Chapter_12\Chapter_12_Assignment4\Stack_2.h">
       <Filter>Pliki nagłówkowe</Filter>
     </ClInclude>
-    <ClInclude Include="Chapter_13\Chapter_13_Functions.h">
-      <Filter>Pliki nagłówkowe</Filter>
-    </ClInclude>
     <ClInclude Include="Chapter_13\Chapter_13_Assignment1\cd.h">
       <Filter>Pliki źródłowe\Chapter 13 Assignments</Filter>
     </ClInclude>
     <ClInclude Include="Chapter_13\Chapter_13_Assignment1\classic.h">
       <Filter>Pliki źródłowe\Chapter 13 Assignments</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_7\Chapter_7_Functions.h">
+      <Filter>Pliki nagłówkowe\Chapters</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_8\Chapter_8_Functions.h">
+      <Filter>Pliki nagłówkowe\Chapters</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_9\Chapter_9_Functions.h">
+      <Filter>Pliki nagłówkowe\Chapters</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_10\Chapter_10_Functions.h">
+      <Filter>Pliki nagłówkowe\Chapters</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_11\Chapter_11_Functions.h">
+      <Filter>Pliki nagłówkowe\Chapters</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_12\Chapter_12_Functions.h">
+      <Filter>Pliki nagłówkowe\Chapters</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_13\Chapter_13_Functions.h">
+      <Filter>Pliki nagłówkowe\Chapters</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_14\Chapter_14_Functions.h">
+      <Filter>Pliki nagłówkowe\Chapters</Filter>
+    </ClInclude>
+    <ClInclude Include="chapters.h">
+      <Filter>Pliki nagłówkowe\Chapters</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment3\workermi.h">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment1\winec.h">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment4\Person.h">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment4\Gunslinger.h">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment4\PokerPlayer.h">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment4\BadDude.h">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment4\Card.h">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClInclude>
+    <ClInclude Include="Chapter_14\Chapter_14_Assignment4\emp.h">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -403,6 +436,48 @@
     </ClCompile>
     <ClCompile Include="Chapter_13\Chapter_13_Assignment1\classic.cpp">
       <Filter>Pliki źródłowe\Chapter 13 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14.cpp">
+      <Filter>Pliki źródłowe</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment1\Chapter_14_Assignment1.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment2\Chapter_14_Assignment2.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment5\Chapter_14_Assignment5.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\Chapter_14_Assignment4.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment3\Chapter_14_Assignment3.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment3\workermi.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment1\winec.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\Person.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\Gunslinger.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\PokerPlayer.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\BadDude.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\Card.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
+    </ClCompile>
+    <ClCompile Include="Chapter_14\Chapter_14_Assignment4\emp.cpp">
+      <Filter>Pliki źródłowe\Chapter 14 Assignments</Filter>
     </ClCompile>
   </ItemGroup>
 </Project>
