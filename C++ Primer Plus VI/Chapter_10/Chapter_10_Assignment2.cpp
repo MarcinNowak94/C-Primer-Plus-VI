@@ -1,6 +1,6 @@
 #include "../stdafx.h"
 #include "Chapter_10_Functions.h"
-#include "Person.h"
+#include "Person_Ch10.h"
 
 /*
 2. Here is a rather simple class definition:
@@ -29,7 +29,6 @@ cout << endl;
 one.FormalShow();
 // etc. for two and three
 */
-
 
 int Chapter_10_Assignment2()
 {

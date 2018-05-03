@@ -21,7 +21,7 @@ void Cd::Report() const
 {
 	std::cout << this << " Cd:\n"
 		<< "Performers:\t" << performers << '\n'
-		<< "Label:\t" << label << '\n'
+		<< "Label:\t\t" << label << '\n'
 		<< "Selections:\t" << selections << '\n'
 		<< "Playtime:\t" << playtime << '\n';
 };

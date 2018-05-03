@@ -1,5 +1,5 @@
 #include "../stdafx.h"
-#include "Person.h"
+#include "Person_Ch10.h"
 
 Person::Person() { lname = ""; fname[0] = '\0'; };// #1
 
@@ -12,7 +12,7 @@ Person::Person(const std::string & ln, const char * fn)
 	};
 	this->fname[strlen(fn)] = NULL;
 };   // #2
-															 
+
 // the following methods display lname and fname
 void Person::Show() const
 {

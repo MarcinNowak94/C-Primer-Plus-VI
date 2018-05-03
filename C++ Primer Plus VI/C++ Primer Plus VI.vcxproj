@@ -143,7 +143,7 @@
     <ClInclude Include="Chapter_10\Chapter_10_Functions.h" />
     <ClInclude Include="Chapter_10\List.h" />
     <ClInclude Include="Chapter_10\Move.h" />
-    <ClInclude Include="Chapter_10\Person.h" />
+    <ClInclude Include="Chapter_10\Person_Ch10.h" />
     <ClInclude Include="Chapter_10\Plorg.h" />
     <ClInclude Include="Chapter_10\Stack.h" />
     <ClInclude Include="Chapter_11\Chapter_11_Assignment1\vect.h" />
@@ -163,6 +163,8 @@
     <ClInclude Include="Chapter_12\Chapter_12_Functions.h" />
     <ClInclude Include="Chapter_13\Chapter_13_Assignment1\cd.h" />
     <ClInclude Include="Chapter_13\Chapter_13_Assignment1\classic.h" />
+    <ClInclude Include="Chapter_13\Chapter_13_Assignment2\cd2.h" />
+    <ClInclude Include="Chapter_13\Chapter_13_Assignment2\classic2.h" />
     <ClInclude Include="Chapter_13\Chapter_13_Functions.h" />
     <ClInclude Include="Chapter_14\Chapter_14_Assignment1\winec.h" />
     <ClInclude Include="Chapter_14\Chapter_14_Assignment3\workermi.h" />
@@ -233,7 +235,7 @@
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
-    <ClCompile Include="Chapter_10\Person.cpp">
+    <ClCompile Include="Chapter_10\PersonCh10.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">../stdafx.h</PrecompiledHeaderFile>
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
@@ -374,7 +376,13 @@
     <ClCompile Include="Chapter_13\Chapter_13_Assignment1\classic.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
+    <ClCompile Include="Chapter_13\Chapter_13_Assignment2\cd2.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
     <ClCompile Include="Chapter_13\Chapter_13_Assignment2\Chapter_13_Assignment2.cpp">
+      <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
+    </ClCompile>
+    <ClCompile Include="Chapter_13\Chapter_13_Assignment2\classic2.cpp">
       <PrecompiledHeaderFile Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">../../stdafx.h</PrecompiledHeaderFile>
     </ClCompile>
     <ClCompile Include="Chapter_13\Chapter_13_Assignment3\Chapter_13_Assignment3.cpp">
